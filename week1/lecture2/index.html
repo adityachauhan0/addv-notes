@@ -12,13 +12,11 @@
         <meta name="author" content="Your Name">
       
       
-        <link rel="canonical" href="https://adityachauhan0.github.io/addv-notes/week1/lecture1/">
+        <link rel="canonical" href="https://adityachauhan0.github.io/addv-notes/week1/lecture2/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../lecture1/">
       
-      
-        <link rel="next" href="../lecture2/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +24,7 @@
     
     
       
-        <title>Lecture 1 - ADDV Study Notes</title>
+        <title>Lecture 2 - ADDV Study Notes</title>
       
     
     
@@ -87,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#week-1-lecture-1-electronic-systems-implementation" class="md-skip">
+        <a href="#week-1-lecture-2-electronic-system-level-esl-design" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lecture 1
+              Lecture 2
             
           </span>
         </div>
@@ -281,7 +279,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../lecture1/" class="md-tabs__link">
           
   
   
@@ -420,6 +418,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../lecture1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lecture 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -437,7 +458,7 @@
   
   
   <span class="md-ellipsis">
-    Lecture 1
+    Lecture 2
     
   </span>
   
@@ -450,7 +471,7 @@
   
   
   <span class="md-ellipsis">
-    Lecture 1
+    Lecture 2
     
   </span>
   
@@ -473,28 +494,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-goals" class="md-nav__link">
+  <a href="#tldr" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning Goals
+      TL;DR
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-what-is-a-system" class="md-nav__link">
+  <a href="#motivation" class="md-nav__link">
     <span class="md-ellipsis">
-      1) What is a System?
+      Motivation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1) What is a System?">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-esl" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is ESL?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is ESL?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#systemelement-relationships-concept-map" class="md-nav__link">
+  <a href="#abstraction-contrast" class="md-nav__link">
     <span class="md-ellipsis">
-      System/Element relationships (concept map)
+      Abstraction contrast
     </span>
   </a>
   
@@ -506,37 +536,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-components-of-electronic-systems" class="md-nav__link">
+  <a href="#decisions-deliverables-at-esl" class="md-nav__link">
     <span class="md-ellipsis">
-      2) Components of Electronic Systems
+      Decisions &amp; Deliverables at ESL
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-hardware-processor-types" class="md-nav__link">
+  <a href="#specifications-executable-specs" class="md-nav__link">
     <span class="md-ellipsis">
-      3) Hardware: Processor Types
+      Specifications &amp; Executable Specs
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3) Hardware: Processor Types">
+    <nav class="md-nav" aria-label="Specifications &amp; Executable Specs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-fixed-behavior-processors" class="md-nav__link">
+  <a href="#levels-of-executable-spec" class="md-nav__link">
     <span class="md-ellipsis">
-      3.1 Fixed-Behavior Processors
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-customizable-processors" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.2 Customizable Processors
+      Levels of executable spec
     </span>
   </a>
   
@@ -548,126 +569,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-coprocessors" class="md-nav__link">
+  <a href="#analysis-modifications-at-esl" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Coprocessors
+      Analysis &amp; Modifications at ESL
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-microcontrollers-mcus" class="md-nav__link">
+  <a href="#partitioning-hw-vs-sw" class="md-nav__link">
     <span class="md-ellipsis">
-      5) Microcontrollers (MCUs)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-asics" class="md-nav__link">
-    <span class="md-ellipsis">
-      6) ASICs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-memory-landscape" class="md-nav__link">
-    <span class="md-ellipsis">
-      7) Memory Landscape
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-software-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      8) Software Components
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-hardware-software-in-a-mobile-device-conceptual" class="md-nav__link">
-    <span class="md-ellipsis">
-      9) Hardware + Software in a Mobile Device (conceptual)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-system-implementation-birds-eye-view" class="md-nav__link">
-    <span class="md-ellipsis">
-      10) System Implementation — Bird’s-Eye View
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11-hardware-design-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      11) Hardware Design Implementation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12-hardware-design-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      12) Hardware Design Verification
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13-hardware-manufacturing-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      13) Hardware Manufacturing &amp; Test
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14-software-development-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      14) Software Development Process
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15-system-integration-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      15) System Integration &amp; Validation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Takeaways
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references-further-reading" class="md-nav__link">
-    <span class="md-ellipsis">
-      References &amp; Further Reading
+      Partitioning (HW vs SW)
     </span>
   </a>
   
@@ -677,29 +590,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lecture2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lecture 2
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -728,7 +618,7 @@
 
 
   
-    <a href="https://github.com/adityachauhan0/addv-notes/edit/main/docs/week1/lecture1.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/adityachauhan0/addv-notes/edit/main/docs/week1/lecture2.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -737,547 +627,505 @@
     
       
     
-    <a href="https://github.com/adityachauhan0/addv-notes/raw/main/docs/week1/lecture1.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/adityachauhan0/addv-notes/raw/main/docs/week1/lecture2.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="week-1-lecture-1-electronic-systems-implementation">Week 1 — Lecture 1: Electronic Systems &amp; Implementation<a class="headerlink" href="#week-1-lecture-1-electronic-systems-implementation" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Course &amp; Lecture Info</p>
-<p><strong>Course:</strong> Advanced Digital Design and Verification (ADDV)<br />
-<strong>Instructor:</strong> Sneh Saurabh<br />
-<strong>Lecture:</strong> Week 1, Lecture 1 — <em>Introduction to Systems, Components, and Implementation</em>  </p>
-</div>
+<h1 id="week-1-lecture-2-electronic-system-level-esl-design">Week 1 – Lecture 2: Electronic System Level (ESL) Design<a class="headerlink" href="#week-1-lecture-2-electronic-system-level-esl-design" title="Permanent link">&para;</a></h1>
+<p><strong>Course:</strong> Advanced Digital Design and Verification<br />
+<strong>Instructor:</strong> Sneh Saurabh • <strong>Date:</strong> 14 Aug 2025</p>
 <hr />
-<h2 id="learning-goals">Learning Goals<a class="headerlink" href="#learning-goals" title="Permanent link">&para;</a></h2>
+<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Define an <strong>electronic system</strong> and its elements.</li>
-<li>Distinguish <strong>hardware, software,</strong> and <strong>other components</strong> in real systems.</li>
-<li>Classify <strong>processors</strong> (fixed-behavior vs customizable) and related compute elements (coprocessors, microcontrollers, ASICs).</li>
-<li>Recognize major <strong>memory categories</strong>.</li>
-<li>Outline the <strong>hardware</strong> and <strong>software</strong> implementation flows.</li>
-<li>Understand <strong>verification</strong>, <strong>manufacturing &amp; test</strong>, and <strong>system integration &amp; validation</strong> at a high level.</li>
+<li>Move <strong>up</strong> the abstraction stack (ESL) to fight SoC complexity.</li>
+<li>Create an <strong>executable specification</strong> → analyze → <strong>partition HW/SW</strong> → implement → <strong>verify</strong> → iterate.</li>
+<li>Use <strong>TLM</strong>, <strong>SystemC</strong>, VIPs, and <strong>HLS/ISS/virtual platforms</strong> to accelerate design + verification.</li>
 </ul>
 <hr />
-<h2 id="1-what-is-a-system">1) What is a System?<a class="headerlink" href="#1-what-is-a-system" title="Permanent link">&para;</a></h2>
+<h2 id="motivation">Motivation<a class="headerlink" href="#motivation" title="Permanent link">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Why RTL-first breaks in modern SoCs</p>
+<ul>
+<li>More features, more HW+SW, more comms → <strong>time ↑</strong>, <strong>cost ↑</strong>, <strong>FoM compromises</strong>.</li>
+<li>Strict <strong>time-to-market</strong> makes long RTL cycles risky.</li>
+</ul>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Counter-move</p>
+<ul>
+<li><strong>Higher-level abstraction (ESL)</strong> to boost design efficiency and parallelize HW/SW development.</li>
+</ul>
+</div>
+<p><strong>Effects vs Fix</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pain</th>
+<th>ESL Relief</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Long design time</td>
+<td>Early modeling + architectural exploration</td>
+</tr>
+<tr>
+<td>Costly late changes</td>
+<td>Fast iteration at high abstraction</td>
+</tr>
+<tr>
+<td>FoM compromises</td>
+<td>Early analysis of power/area/perf trade-offs</td>
+</tr>
+<tr>
+<td>Verification bottlenecks</td>
+<td>Co-verification, VIPs, mixed-abstraction TBs</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="what-is-esl">What is ESL?<a class="headerlink" href="#what-is-esl" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>A <em>system</em> is a combination of elements that function together to produce the capability required to meet a need.</p>
+<p>A <strong>higher-level executable abstraction</strong> of the system that is <strong>above RTL</strong>, aimed at comprehension, exploration, and early verification.</p>
 </blockquote>
-<p><strong>Elements may include:</strong> hardware, software, equipment, facilities, personnel, and processes.</p>
-<p><strong>Electronic systems</strong>: systems designed to <strong>sense</strong>, <strong>process</strong>, and <strong>manipulate</strong> electronic signals.<br />
-Examples: mobile phone, computer, robot, television, EEG machine, etc.</p>
-<h3 id="systemelement-relationships-concept-map">System/Element relationships (concept map)<a class="headerlink" href="#systemelement-relationships-concept-map" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>flowchart TD
-    A[System Need] --&gt; B[System]
-    B --&gt; C[Elements]
-    C --&gt; C1[Hardware]
-    C --&gt; C2[Software]
-    C --&gt; C3[Equipment &amp; Facilities]
-    C --&gt; C4[Personnel]
-    C --&gt; C5[Processes]
-    B --&gt; D[Capabilities Produced]
-    D --&gt; E[Meets the Need]</code></pre>
-<hr />
-<h2 id="2-components-of-electronic-systems">2) Components of Electronic Systems<a class="headerlink" href="#2-components-of-electronic-systems" title="Permanent link">&para;</a></h2>
-<p>Systems often comprise numerous subsystems built with <strong>diverse technologies</strong>; the overall functionality is <strong>richer</strong> than individual parts.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">At a glance</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
-<pre class="mermaid"><code>flowchart TD
-    S["Electronic System"] --&gt; H["Hardware"]
-    S --&gt; SW["Software"]
-    S --&gt; O["Other Components"]
-
-    H --&gt; H1["Processing"]
-    H --&gt; H2["Storage (Memory)"]
-    H --&gt; H3["Sensing"]
-    H --&gt; H4["Communication"]
-
-    SW --&gt; SW1["System SW (OS, drivers)"]
-    SW --&gt; SW2["Dev Tools (compiler, linker, debugger)"]
-    SW --&gt; SW3["Application SW (GP/Specialized)"]
-    SW --&gt; SW4["Firmware"]
-
-    O --&gt; O1["Packaging &amp; PCBs"]
-    O --&gt; O2["Mechanical parts (hinges, keyboard)"]
-    O --&gt; O3["Power &amp; Thermal"]
-</code></pre>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Key notes</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="admonition tip">
+<p class="admonition-title">Expectations</p>
 <ul>
-<li><strong>Hardware (electronic)</strong>: compute, memory, sensors/actuators, I/O and comms.  </li>
-<li><strong>Software</strong>: system software, development toolchain, application software, firmware.  </li>
-<li><strong>Other components</strong>: packaging, PCB, mechanical parts, power delivery, etc.</li>
+<li><strong>Time-to-result ↓</strong>, <strong>FoM ↑</strong>, <strong>cost-effective</strong>, <strong>concurrent</strong> HW/SW development.</li>
 </ul>
-<hr />
-<h2 id="3-hardware-processor-types">3) Hardware: Processor Types<a class="headerlink" href="#3-hardware-processor-types" title="Permanent link">&para;</a></h2>
-<p>Instruction-set/architecture determines <strong>customizability</strong>.</p>
+</div>
+<h3 id="abstraction-contrast">Abstraction contrast<a class="headerlink" href="#abstraction-contrast" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>flowchart LR
-    P[Processors] --&gt; F[Fixed Behavior]
-    P --&gt; C[Customizable]</code></pre>
-<h3 id="31-fixed-behavior-processors">3.1 Fixed-Behavior Processors<a class="headerlink" href="#31-fixed-behavior-processors" title="Permanent link">&para;</a></h3>
+  spec["Specification"]
+  rtl["RTL (HDL)"]
+  gds["Layout (GDS)"]
+  esl["ESL"]
+
+  spec -- Manual Effort --&gt; rtl;
+  rtl --&gt; gds;
+  spec -- ESL Modeling --&gt; esl;
+  esl --&gt; rtl;
+
+  classDef low fill:#eeeeee,stroke:#999,color:#333;
+  class rtl,gds low;
+
+````
+
+---
+
+## ESL Flow (big picture)
+
+```mermaid
+flowchart LR
+    S[Specification]
+    M[ESL Model]
+    A[Analyze]
+    F{Acceptable?}
+    P[Partition]
+    SW[SW Model]
+    HW[HW Model]
+    D[Analyze &amp; Debug]
+    OK[Acceptable]
+    SI[SW Implementation]
+    HI[HW Implementation]
+    PV[Post-Partitioning Verification]
+    MOD[Modify]
+
+    S--&gt;M--&gt;A--&gt;F
+    F -- "No" --&gt; MOD --&gt; M
+    F -- "Yes" --&gt; P
+    P --&gt; SW --&gt; D
+    P --&gt; HW --&gt; D
+    D --&gt;|Refine| SW
+    D --&gt;|Refine| HW
+    D --&gt; OK
+    OK --&gt; SI &amp; HI --&gt; PV
+    PV --&gt;|Issues| MOD</code></pre>
+<hr />
+<h2 id="decisions-deliverables-at-esl">Decisions &amp; Deliverables at ESL<a class="headerlink" href="#decisions-deliverables-at-esl" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>General-purpose:</strong> designed for broad computing requirements (e.g., x86, ARM cores).</p>
-</li>
-<li>
-<p><strong>Special-purpose:</strong> optimized for specific tasks (power, speed, area):</p>
+<p><strong>Architectural exploration/estimation/optimization</strong></p>
 <ul>
 <li>
-<p>DSP processors</p>
+<p>Concurrency: sequential / parallel / pipelined / multithreaded</p>
 </li>
 <li>
-<p>Image/vision processors</p>
+<p>Communication: bus / buffered / memory / point-to-point</p>
 </li>
 <li>
-<p><strong>NPUs/TPUs</strong> (neural/tensor processing)</p>
-</li>
-<li>
-<p>GPUs</p>
+<p>Functional adequacy: algorithm choice, arbitration, data representation (fixed vs float)</p>
 </li>
 </ul>
 </li>
+<li>
+<p><strong>HW–SW partitioning</strong> with fewer experiments</p>
+</li>
+<li>
+<p><strong>Parallel SW development</strong> before HW exists</p>
+</li>
+<li>
+<p><strong>IP &amp; HW–SW integration</strong></p>
+</li>
+<li>
+<p><strong>RTL generation</strong></p>
+</li>
+<li>
+<p><strong>Faster verification</strong> (mixed abstraction, auto TB scaffolding)</p>
+</li>
 </ul>
+<hr />
+<h2 id="specifications-executable-specs">Specifications &amp; Executable Specs<a class="headerlink" href="#specifications-executable-specs" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">What counts as an executable spec?</p>
+</div>
+<ul>
+<li>A runnable functional/behavioral model that exhibits intended behavior.  </li>
+<li>Tech: <strong>SystemC</strong>, <strong>TLM</strong>, <strong>SystemVerilog</strong>, MATLAB, XML, <strong>IP-XACT</strong>, SDL.</li>
+</ul>
+<h3 id="levels-of-executable-spec">Levels of executable spec<a class="headerlink" href="#levels-of-executable-spec" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TB
+  AS["Architecture Spec\n(ISA, behaviors, features)"]
+  DS["Design Spec\n(uarch: pipeline, caches, counts)"]
+  TLM["Transaction-Level Modeling\n(bus transactions, timing options)"]
+
+  AS --&gt; DS --&gt; TLM
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Good spec attributes</p>
+</div>
+<ul>
+<li>Complete &amp; precise functional requirements + constraints  </li>
+<li>Avoid premature platform details  </li>
+<li>Evolves with refinement; supports <strong>mixing abstraction levels</strong>  </li>
+<li>Source of truth for <strong>requirements → implementation → verification</strong></li>
+</ul>
+<hr />
+<h2 id="analysis-modifications-at-esl">Analysis &amp; Modifications at ESL<a class="headerlink" href="#analysis-modifications-at-esl" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Pre-partition</strong>: time/space/power/complexity/TTM trade-offs</p>
+</li>
+<li>
+<p><strong>Static</strong>: maintainability, usability, criticality, reliability</p>
+</li>
+<li>
+<p><strong>Dynamic</strong>: <strong>latency/throughput</strong>, arbitration/scheduling effects</p>
+</li>
+<li>
+<p><strong>Reqs for analysis</strong>: computation (fixed/float), comms (bandwidth)</p>
+</li>
+</ul>
+<hr />
+<h2 id="partitioning-hw-vs-sw">Partitioning (HW vs SW)<a class="headerlink" href="#partitioning-hw-vs-sw" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart TD
-    FB[Fixed Behavior] --&gt; GP[General Purpose CPU]
-    FB --&gt; SP[Special Purpose]
-    SP --&gt; SP1[DSP]
-    SP --&gt; SP2[Image/Video]
-    SP --&gt; SP3[NPU/TPU]
-    SP --&gt; SP4[GPU]</code></pre>
-<h3 id="32-customizable-processors">3.2 Customizable Processors<a class="headerlink" href="#32-customizable-processors" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p><strong>ASIP</strong> (Application-Specific Instruction-set Processors): add custom instructions for domain PPA gains.</p>
-</li>
-<li>
-<p><strong>Configurable cores:</strong> cache sizes, pipeline depth, functional units, interfaces.</p>
-</li>
-<li>
-<p>Commercial examples include families like <strong>Xtensa</strong> and <strong>ARC-V</strong> with full toolchains.</p>
-</li>
-</ul>
-<pre class="mermaid"><code>flowchart TD
-    C["Customizable"] --&gt; ASIP["ASIP (Extend ISA)"]
-    C --&gt; CFG["Configurable Core"]
+  E["Executable Spec"] --&gt; C{"Criteria"};
 
-    ASIP --&gt; T1["Custom Instructions"]
-    ASIP --&gt; T2["Compiler/Toolchain Support"]
+  C --&gt;|Perf target| HW1["HW Candidate"];
+  C --&gt;|Flexibility| SW1["SW Candidate"];
+  C --&gt;|Area/Power| HW2["Accelerator"];
+  C --&gt;|Safety/Security| HW3["Isolated IP"];
+  C --&gt;|Reuse| SW2["FW / Driver"];
 
-    CFG --&gt; P1["Pipeline/Issue Width"]
-    CFG --&gt; P2["Cache Sizes/Hierarchy"]
-    CFG --&gt; P3["Custom Interfaces/Accelerators"]
+  HW1 --&gt; HWAs["HW Subsystem"];
+  HW2 --&gt; HWAs;
+  HW3 --&gt; HWAs;
+
+  SW1 --&gt; SWAs["SW Subsystem"];
+  SW2 --&gt; SWAs;
+
+  HWAs --&gt; IF["Defined Interfaces (TLM/AMBA/etc)"];
+  SWAs --&gt; IF;
 </code></pre>
-<hr />
-<h2 id="4-coprocessors">4) Coprocessors<a class="headerlink" href="#4-coprocessors" title="Permanent link">&para;</a></h2>
-<p><strong>Definition:</strong> An auxiliary processor that supplements the main CPU for certain tasks (e.g., floating-point, graphics, signal processing, crypto, I/O, AI/vision).</p>
-<p><strong>Why use them?</strong></p>
+<p>Decide also:</p>
 <ul>
 <li>
-<p><strong>Optimized</strong> for specific algorithms → better performance/Watt.</p>
+<h1 id="and-type-of-processors-and-potential-isa-changes">and type of processors (and potential ISA changes)<a class="headerlink" href="#and-type-of-processors-and-potential-isa-changes" title="Permanent link">&para;</a></h1>
 </li>
 <li>
-<p>Let the main CPU remain simpler (can reduce cost/power in some products).</p>
+<p>Memory org: ROM/SRAM/DRAM/…</p>
 </li>
 <li>
-<p>Over time, popular coprocessor functions may migrate into CPUs.</p>
-</li>
-</ul>
-<pre class="mermaid"><code>flowchart LR
-    CPU[Main CPU] -- offload --&gt; X1[FPU]
-    CPU -- offload --&gt; X2[GPU]
-    CPU -- offload --&gt; X3[AI/Vision]
-    CPU -- offload --&gt; X4[Crypto/Compression]
-    CPU -- offload --&gt; X5[Signal Processing]</code></pre>
-<hr />
-<h2 id="5-microcontrollers-mcus">5) Microcontrollers (MCUs)<a class="headerlink" href="#5-microcontrollers-mcus" title="Permanent link">&para;</a></h2>
-<p><strong>One chip</strong> integrating <strong>CPU core(s) + memory + programmable I/O + peripherals</strong>.<br />
-Often used in embedded/real-time systems (robotics, automotive, medical, IoT).</p>
-<ul>
-<li>
-<p><strong>Typical features</strong></p>
-<ul>
-<li>
-<p>GPIO (input mode: read sensors; output mode: drive LEDs/motors via power stages)</p>
+<p>Interconnect/communication scheme</p>
 </li>
 <li>
-<p>Timers/counters, watchdog</p>
-</li>
-<li>
-<p>ADC/DAC, comparators</p>
-</li>
-<li>
-<p>UART/SPI/I²C/CAN/etc.</p>
-</li>
-<li>
-<p>On-chip Flash and SRAM</p>
-</li>
-</ul>
-</li>
-</ul>
-<pre class="mermaid"><code>flowchart TB
-    subgraph MCU["Microcontroller (single IC)"]
-      CORE["Processor Core"]
-      MEM["Flash + SRAM"]
-      BUS["Internal Bus"]
-      TIM["Timers / PWM"]
-      GPIO["GPIO"]
-      ADC["ADC / DAC"]
-      COMM["UART / SPI / I2C / CAN"]
-    end
-
-    CORE -- "fetch/exec" --&gt; MEM
-    CORE &lt;---&gt; BUS
-    BUS &lt;---&gt; TIM
-    BUS &lt;---&gt; GPIO
-    BUS &lt;---&gt; ADC
-    BUS &lt;---&gt; COMM
-
-    GPIO --&gt; OUT["Actuators/Motors (via drivers)"]
-    GPIO --&gt; IN["Sensors/Buttons"]
-    ADC --&gt; SENS["Analog Sensors"]
-</code></pre>
-<p><strong>Microcontroller vs SoC:</strong> an SoC is generally broader (may integrate multi-core CPUs, GPUs, memory controllers, etc.). An SoC can include MCU-like subsystems.</p>
-<hr />
-<h2 id="6-asics">6) ASICs<a class="headerlink" href="#6-asics" title="Permanent link">&para;</a></h2>
-<p><strong>Application-Specific Integrated Circuits</strong> — designed for a <strong>specific application</strong> rather than general use.</p>
-<ul>
-<li>
-<p>May integrate <strong>multiple processors</strong>, <strong>memories</strong>, <strong>accelerators</strong>, and <strong>peripherals</strong>.</p>
-</li>
-<li>
-<p>Complex ASICs ≈ <strong>SoCs</strong>.</p>
-</li>
-</ul>
-<p><strong>Example application domains</strong></p>
-<ul>
-<li>
-<p>Networking</p>
-</li>
-<li>
-<p>Security</p>
-</li>
-<li>
-<p>Voice processing</p>
-</li>
-<li>
-<p>Video encode/decode</p>
-</li>
-<li>
-<p>Storage and I/O controllers</p>
-</li>
-</ul>
-<pre class="mermaid"><code>flowchart TB
-    subgraph ASIC["ASIC / SoC (high-level)"]
-      CPU1[CPU Cluster]
-      ACC1[Domain Accelerator]
-      MEM1[SRAM/TCAM/Cache]
-      PERI[I/O Peripherals]
-      BUS1[Interconnect/Fabric]
-      PWR[Power/Clock/Reset]
-    end
-    CPU1 &lt;--&gt; BUS1
-    ACC1 &lt;--&gt; BUS1
-    MEM1 &lt;--&gt; BUS1
-    PERI &lt;--&gt; BUS1
-    PWR --&gt; CPU1
-    PWR --&gt; ACC1
-    PWR --&gt; MEM1
-    PWR --&gt; PERI</code></pre>
-<hr />
-<h2 id="7-memory-landscape">7) Memory Landscape<a class="headerlink" href="#7-memory-landscape" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TB
-    M["Memory"] --&gt; NVM["ROM (Non-Volatile)"]
-    M --&gt; VM["RAM (Volatile)"]
-    M --&gt; EXT["External Storage"]
-
-    NVM --&gt; PROM["PROM"]
-    NVM --&gt; EPROM["EPROM"]
-    NVM --&gt; FLASH["Flash"]
-
-    VM --&gt; SRAM["SRAM"]
-    VM --&gt; DRAM["DRAM"]
-
-    EXT --&gt; HDD["Hard Disk"]
-    EXT --&gt; ODD["Optical (CD/DVD)"]
-    EXT --&gt; USB["USB Flash"]
-</code></pre>
-<p><strong>Notes</strong></p>
-<ul>
-<li>
-<p><strong>NVM/ROM</strong>: retains data without power (PROM/EPROM/Flash).</p>
-</li>
-<li>
-<p><strong>RAM</strong>: fast working memory (SRAM for on-chip caches; DRAM for main memory).</p>
-</li>
-<li>
-<p><strong>External</strong>: system-level storage devices.</p>
+<p>Sub-partitioning across <strong>multiple CPUs</strong> and <strong>multiple HW teams</strong></p>
 </li>
 </ul>
 <hr />
-<h2 id="8-software-components">8) Software Components<a class="headerlink" href="#8-software-components" title="Permanent link">&para;</a></h2>
-<p><strong>Categories</strong></p>
+<h2 id="post-partitioning-analysis-debug-verification">Post-partitioning: Analysis, Debug, Verification<a class="headerlink" href="#post-partitioning-analysis-debug-verification" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>System Software:</strong> OS, device drivers, boot/firmware.</p>
+<p><strong>Analysis</strong>: performance, interfaces, area, cost, debugability</p>
 </li>
 <li>
-<p><strong>Software Development Tools:</strong> compiler, assembler, linker, loader, debugger, profilers, CI.</p>
+<p><strong>Debug</strong>: run SW on <strong>ISS</strong>; model HW with <strong>SystemC/HDL</strong>; ensure interface compatibility</p>
 </li>
 <li>
-<p><strong>Application Software:</strong> end-user applications (general-purpose or domain-specific).</p>
+<p><strong>Verification planning</strong> @ higher abstraction:</p>
+<ul>
+<li>
+<p>Coverage at TLM</p>
 </li>
 <li>
-<p><strong>Firmware:</strong> machine instructions embedded in devices (cameras, phones, NICs, printers, routers, remotes).</p>
+<p>Assertions/properties at the same level</p>
+</li>
+<li>
+<p>Mixed-abstraction environments (e.g., TLM + RTL)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Iterate if intent not preserved.</p>
+</li>
+</ul>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Spec
+    participant ESL
+    participant Part as Partition
+    participant SW as SW Model/ISS
+    participant HW as HW Model/RTL
+    participant Ver as Post-Part Verify
+    Spec-&gt;&gt;ESL: Executable spec
+    ESL-&gt;&gt;Part: Analyze &amp; Partition
+    Part-&gt;&gt;SW: Build SW model
+    Part-&gt;&gt;HW: Build HW model
+    SW--&gt;&gt;Ver: Stimulus/Results
+    HW--&gt;&gt;Ver: Stimulus/Results
+    Ver--&gt;&gt;ESL: Issues? -&gt; Modify &amp; Iterate</code></pre>
+<hr />
+<h2 id="software-implementation-models">Software Implementation Models<a class="headerlink" href="#software-implementation-models" title="Permanent link">&para;</a></h2>
+<h3 id="waterfall-pre-esl">Waterfall (pre-ESL)<a class="headerlink" href="#waterfall-pre-esl" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Linear, sequential; late feedback.</li>
+</ul>
+<h3 id="spiral-with-esl">Spiral (with ESL)<a class="headerlink" href="#spiral-with-esl" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Iterative, risk-driven; SW &amp; HW co-evolve.</li>
+</ul>
+<pre class="mermaid"><code>gantt
+    dateFormat  X
+    title Waterfall vs Spiral (conceptual)
+    section Waterfall
+    Requirements   :a1, 1, 2
+    Design         :a2, 3, 2
+    Implement      :a3, 5, 2
+    Integrate/Test :a4, 7, 2
+    section Spiral (overlapping)
+    Prototype/Model(ESL)   :b1, 1, 1
+    Risk Analysis          :b2, 2, 1
+    Build/Refine           :b3, 2, 2
+    Evaluate/Plan Next     :b4, 4, 1
+    Next Spiral            :b5, 5, 3</code></pre>
+<hr />
+<h2 id="applying-esl-to-software">Applying ESL to Software<a class="headerlink" href="#applying-esl-to-software" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Generate SW from ESL or refined models (<strong>software synthesis</strong>) or hand-code guided by the model.</p>
+</li>
+<li>
+<p><strong>Observability</strong> into HW via models.</p>
+</li>
+<li>
+<p><strong>Scope</strong></p>
+<ul>
+<li>
+<p><strong>ISS</strong>: CPU regs/mem visible</p>
+</li>
+<li>
+<p><strong>Virtual Platform</strong>: full SoC (user I/F, storage, accelerators)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Exec platforms</strong>: workstation, FPGA-based emulation</p>
+</li>
+<li>
+<p><strong>Metrics</strong>: speed, memory footprint</p>
 </li>
 </ul>
 <pre class="mermaid"><code>flowchart LR
-    SW[Software] --&gt; SYS[System SW]
-    SW --&gt; DEV[Dev Toolchain]
-    SW --&gt; APP[Application SW]
-    SW --&gt; FWM[Firmware]
+  SSW["Software"];
+  ISS["Hardware Model (ISS)"];
+  VP(("Virtual Platform"));
 
-    SYS --&gt; OS[Operating System]
-    SYS --&gt; DRV[Device Drivers]
-    SYS --&gt; BOOT[Boot / BIOS / UEFI]
-    DEV --&gt; COMP[Compiler/Assembler]
-    DEV --&gt; LINK[Linker/Loader]
-    DEV --&gt; DBG[Debugger/Profiler]
-    APP --&gt; GP[General Purpose]
-    APP --&gt; SPEC[Specialized/Domain]</code></pre>
-<hr />
-<h2 id="9-hardware-software-in-a-mobile-device-conceptual">9) Hardware + Software in a Mobile Device (conceptual)<a class="headerlink" href="#9-hardware-software-in-a-mobile-device-conceptual" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TB
-    subgraph Phone["Mobile Phone (Conceptual Stack)"]
-      subgraph HW["Hardware"]
-        RF["RF Front-end"]
-        AP["Application Processor / SoC"]
-        MEM["LPDDR / eMMC / UFS"]
-        PER["Peripherals: Sensor, Display, Camera, Audio, BT/WiFi"]
-        PWR["PMIC/Battery"]
-      end
-      subgraph SWStack["Software"]
-        K["Linux Kernel / RTOS"]
-        HAL["Hardware Abstraction Layer"]
-        SS["System Services &amp; Daemons"]
-        RT["Runtime (e.g., Android Runtime)"]
-        API["System APIs"]
-        APP["Apps (System/Privileged/3rd-party)"]
-      end
-    end
-
-    HW --&gt; SWStack
-    API --&gt; APP
-    SS --&gt; RT
-    HAL --&gt; K
-    K --&gt; AP
-    AP --&gt; MEM
-    AP --&gt; PER
+  SSW &lt;--&gt; ISS;
+  SSW --&gt; VP;
+  ISS --&gt; VP;
 </code></pre>
 <hr />
-<h2 id="10-system-implementation-birds-eye-view">10) System Implementation — Bird’s-Eye View<a class="headerlink" href="#10-system-implementation-birds-eye-view" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TD
-    SF[System Functionality / Requirements] --&gt; PART[Partitioning]
-    PART --&gt; HWF[HW Functionality]
-    PART --&gt; SWF[SW Functionality]
-    HWF --&gt; IC[IC Design &amp; Fabrication]
-    IC --&gt; FAB[Fabricated ICs/SoCs/Peripherals]
-    SWF --&gt; SWDEV[Software Development]
-    SWDEV --&gt; EXE[Executables: Firmware, Drivers, Apps]
-    FAB --&gt; INT[System Integration, Validation &amp; Test]
-    EXE --&gt; INT
-    INT --&gt; PROD[Product]</code></pre>
-<p><strong>Project-level actions</strong></p>
+<h2 id="debuggability">Debuggability<a class="headerlink" href="#debuggability" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HW trace buffers</td>
+<td>Real silicon visibility</td>
+<td>Area/perf cost, security concerns</td>
+</tr>
+<tr>
+<td>ESL-based</td>
+<td>PC/data trace from models, no HW cost</td>
+<td>Model fidelity limits, discipline</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="hardware-implementation-paths">Hardware Implementation Paths<a class="headerlink" href="#hardware-implementation-paths" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>RTL to gates</strong> via synthesis.</li>
+</ul>
+<p><strong>Options</strong></p>
 <ol>
 <li>
-<p><strong>Map</strong> functionality to HW vs SW.</p>
+<p><strong>Extensible processors</strong> (custom instructions, SIMD/MAC) + vendor toolchains</p>
 </li>
 <li>
-<p><strong>Build components</strong><br />
-    A. HW design, verification, fabrication<br />
-    B. SW development</p>
+<p><strong>Co-processors</strong> (DSP/VLIW attached on bus)</p>
 </li>
 <li>
-<p><strong>Integrate and validate</strong> the combined system.</p>
+<p><strong>ASIC</strong> (HLS from C/C++/SystemC → RTL)</p>
+</li>
+<li>
+<p><strong>FPGA</strong> (rapid prototyping; same HLS path)</p>
 </li>
 </ol>
+<pre class="mermaid"><code>graph LR
+    H[ESL/C/C++/SystemC] --&gt; HLS[High-Level Synthesis]
+    HLS --&gt; RTL[RTL]
+    RTL --&gt; ASIC[ASIC Flow]
+    RTL --&gt; FPGA[FPGA Flow]</code></pre>
 <hr />
-<h2 id="11-hardware-design-implementation">11) Hardware Design Implementation<a class="headerlink" href="#11-hardware-design-implementation" title="Permanent link">&para;</a></h2>
-<p>Two major transformations:</p>
+<h2 id="implementation-verification">Implementation Verification<a class="headerlink" href="#implementation-verification" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>Logic Synthesis:</strong> Convert <strong>RTL</strong> → equivalent <strong>netlist</strong> (in target library).</p>
+<p>Verify implementation preserves <strong>design intent</strong> (compare to post-partition model).</p>
 </li>
 <li>
-<p><strong>Physical Design:</strong> Convert <strong>netlist</strong> → <strong>layout (GDS)</strong> ready for fabrication.</p>
+<p><strong>Speed tricks</strong>: subsystem-level focus, mixed abstraction, FPGA prototypes.</p>
 </li>
+<li>
+<p><strong>Pass/Fail notions</strong></p>
+<ul>
+<li>
+<p>Positive: requirement satisfied (valid inputs)</p>
+</li>
+<li>
+<p>Negative: robustness (invalid inputs)</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="verification-ips-vips">Verification IPs (VIPs)<a class="headerlink" href="#verification-ips-vips" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Reusable verification components.</li>
 </ul>
 <pre class="mermaid"><code>flowchart LR
-    RTL["RTL"] --&gt; SYN["Logic Synthesis"]
-    SYN --&gt; NET["Gate-level Netlist"]
-    NET --&gt; PD["Physical Design"]
-    PD --&gt; LAYOUT["Layout (GDS)"]
-    LAYOUT --&gt; FAB["Fabrication"]
+    VIP[Verification IP]
+    VIP --&gt;|Dynamic| Dyn[Stimulus, Scoreboard, Coverage]
+    VIP --&gt;|Static| Sta[Assertions/Properties]</code></pre>
+<hr />
+<h2 id="systemc-primer">SystemC Primer<a class="headerlink" href="#systemc-primer" title="Permanent link">&para;</a></h2>
+<h3 id="history-state">History &amp; State<a class="headerlink" href="#history-state" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>timeline
+    title SystemC Key Milestones
+    1996 : Development starts
+    2002 : OSCI releases v2.0 proposal
+    2006 : IEEE Std 1666-2005
+    2023 : Ref Impl v3.0.0 (GitHub)</code></pre>
+<h3 id="why-systemc">Why SystemC?<a class="headerlink" href="#why-systemc" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Bridges SW/HW; models <strong>parallelism</strong> in familiar <strong>C++</strong>.</p>
+</li>
+<li>
+<p>Any valid C++ program is valid SystemC (it’s an extension).</p>
+</li>
+<li>
+<p>Heavy use of <strong>templates/macros/libs</strong>.</p>
+</li>
+</ul>
+<hr />
+<h2 id="simulation-pipeline">Simulation Pipeline<a class="headerlink" href="#simulation-pipeline" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+  Dev["C++ Dev Env"];
+  Comp["Compile"];
+  LinkStep["Link"];
+  Exe["Executable"];
+  RunStep["Run on Host (Win/Unix)"];
+  Result["Simulation Results"];
+
+  Dev --&gt; Comp;
+  Comp --&gt; LinkStep;
+  LinkStep --&gt; Exe;
+  Exe --&gt; RunStep;
+  RunStep --&gt; Result;
 </code></pre>
-<p><strong>Typical physical design tasks</strong></p>
-<pre class="mermaid"><code>flowchart TB
-    A[Netlist] --&gt; B[Chip Planning / Floorplanning]
-    B --&gt; C[Placement]
-    C --&gt; D[Clock Tree Synthesis]
-    D --&gt; E[Global Routing]
-    E --&gt; F[Detailed Routing]
-    F --&gt; G[ECO/Design Fixes]
-    G --&gt; H[Write GDS]</code></pre>
 <hr />
-<h2 id="12-hardware-design-verification">12) Hardware Design Verification<a class="headerlink" href="#12-hardware-design-verification" title="Permanent link">&para;</a></h2>
-<p><strong>Goal:</strong> Ensure the design <strong>implements the intended functionality</strong> under constraints.<br />
-Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
+<h2 id="systemc-hello-world">SystemC “Hello, World!”<a class="headerlink" href="#systemc-hello-world" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;systemc.h&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">SC_MODULE</span><span class="p">(</span><span class="n">Hello_SystemC</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">SC_CTOR</span><span class="p">(</span><span class="n">Hello_SystemC</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">module_thread</span><span class="p">);</span><span class="w"> </span><span class="c1">// register thread process</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">module_thread</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="n">SC_REPORT_INFO</span><span class="p">(</span><span class="s">&quot;Module Thread Saying&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hello SystemC World!&quot;</span><span class="p">);</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">};</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="kt">int</span><span class="w"> </span><span class="nf">sc_main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="n">Hello_SystemC</span><span class="w"> </span><span class="n">HelloWorld_i</span><span class="p">(</span><span class="s">&quot;HelloWorld_i&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// create instance</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="n">sc_start</span><span class="p">();</span><span class="w">                                  </span><span class="c1">// start simulator (run to time 0 unless events)</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="compile-example">Compile (example)<a class="headerlink" href="#compile-example" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># from the directory with main.cpp</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>g++<span class="w"> </span>-I&lt;path_to_systemc_include&gt;<span class="w"> </span>-L&lt;path_to_systemc_lib&gt;<span class="w"> </span>main.cpp<span class="w"> </span>-lsystemc<span class="w"> </span>-o<span class="w"> </span>hello_sc
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>./hello_sc
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Checklist before compiling</p>
+</div>
 <ul>
-<li>
-<p><strong>Functional Verification</strong></p>
-<ul>
-<li>
-<p><strong>Simulation-based</strong> (directed, random, constrained random, coverage-driven)</p>
-</li>
-<li>
-<p><strong>Formal methods</strong> (property checking, model checking)</p>
-</li>
-<li>
-<p><strong>Equivalence checking</strong> (e.g., RTL vs netlist)</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Physical Verification</strong></p>
-<ul>
-<li>
-<p>DRC, ERC, LVS</p>
-</li>
-<li>
-<p>Signal integrity, IR drop, timing (STA), variation analysis</p>
-</li>
-<li>
-<p><strong>Sign-off</strong> checks</p>
-</li>
-</ul>
-</li>
-</ul>
-<pre class="mermaid"><code>flowchart TD
-    V[Verification] --&gt; FV[Functional Verification]
-    V --&gt; PV[Physical Verification]
-    FV --&gt; SIM[Simulation-based]
-    FV --&gt; FORM[Formal Methods]
-    FV --&gt; EQ[Equivalence Checking]
-    PV --&gt; DRC[DRC/ERC/LVS]
-    PV --&gt; STA[STA &amp; Timing Reports]
-    PV --&gt; SI[SI/IR drop/EM]</code></pre>
-<hr />
-<h2 id="13-hardware-manufacturing-test">13) Hardware Manufacturing &amp; Test<a class="headerlink" href="#13-hardware-manufacturing-test" title="Permanent link">&para;</a></h2>
-<p><strong>Input:</strong> Final <strong>GDS</strong> from physical design.<br />
-<strong>Output:</strong> <strong>Chips</strong> that pass production test.</p>
-<pre class="mermaid"><code>flowchart TD
-    G[GDS] --&gt; PRE[Pre-process &amp; Mask Prep]
-    PRE --&gt; WAF[Wafer Fabrication]
-    WAF --&gt; DIE[Die Testing]
-    DIE --&gt; PKG[Packaging]
-    PKG --&gt; FT[Final Testing]
-    FT --&gt; CHIP[Chips Shipped]</code></pre>
-<p><strong>Device-level test loop (ATE)</strong></p>
-<pre class="mermaid"><code>flowchart LR
-    TP[Test Patterns] --&gt; DIEU[Die Under Test]
-    ER[Expected Responses] --&gt; CMP{Match?}
-    DIEU --&gt; AR[Actual Responses]
-    AR --&gt; CMP
-    ER --&gt; CMP
-    CMP -- Yes --&gt; PASS[Test Pass / Accept]
-    CMP -- No --&gt; FAIL[Test Fail / Reject/Diagnose]</code></pre>
-<hr />
-<h2 id="14-software-development-process">14) Software Development Process<a class="headerlink" href="#14-software-development-process" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TD
-    PLAN["Planning &amp; Requirement Analysis"] --&gt; ARCH["Designing Architecture"]
-    ARCH --&gt; CODE["Implementation / Coding"]
-    CODE --&gt; TEST["Testing (manual &amp; automated)"]
-    TEST --&gt; DEP["Deployment &amp; Integration"]
-    DEP --&gt; MAINT["Maintenance (bug fixes, enhancements, support)"]
-</code></pre>
-<ul>
-<li>
-<p><strong>Planning:</strong> resources, schedules, functional and technical definitions, documentation.</p>
-</li>
-<li>
-<p><strong>Architecture:</strong> layers, modules, responsibilities, technology selection.</p>
-</li>
-<li>
-<p><strong>Implementation:</strong> compilers/interpreters, build systems, debuggers used to produce executables.</p>
-</li>
-<li>
-<p><strong>Testing:</strong> unit/integration/system/regression; automation &amp; CI.</p>
-</li>
-<li>
-<p><strong>Deployment:</strong> delivery to target environment; integration with other components.</p>
-</li>
-<li>
-<p><strong>Maintenance:</strong> fixes, performance optimization, new features.</p>
-</li>
+<li><code>g++</code> installed  </li>
+<li><code>-I</code> points to <code>systemc/include</code>  </li>
+<li><code>-L</code> points to the lib directory (e.g., <code>lib-linux64</code>)  </li>
+<li>Link with <code>-lsystemc</code>  </li>
+<li>If runtime can’t find the shared lib, set <code>LD_LIBRARY_PATH</code> (Linux) or use <code>rpath</code>.</li>
 </ul>
 <hr />
-<h2 id="15-system-integration-validation">15) System Integration &amp; Validation<a class="headerlink" href="#15-system-integration-validation" title="Permanent link">&para;</a></h2>
-<p>Integration begins as components become available. It surfaces <strong>interface/integration issues</strong> early.</p>
+<h2 id="quick-study-guide">Quick Study Guide<a class="headerlink" href="#quick-study-guide" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>Validation highlights</strong></p>
-<ul>
-<li>
-<p>Run <strong>actual OS/applications</strong> on fabricated silicon or accurate platforms.</p>
+<p><strong>Explain ESL vs RTL</strong> and why abstraction helps.</p>
 </li>
 <li>
-<p>Exercise <strong>system-level</strong> scenarios not covered in unit tests.</p>
+<p><strong>Draw the ESL flow</strong> (spec → model → analyze → partition → implement → verify).</p>
 </li>
 <li>
-<p>Find <strong>electrical issues</strong> (crosstalk, IR drop, thermal, variation).</p>
+<p><strong>List 3 partitioning criteria</strong> and 3 analysis types.</p>
 </li>
 <li>
-<p><strong>Stress/soak</strong> tests and corner/abuse cases.</p>
-</li>
-</ul>
-</li>
-</ul>
-<pre class="mermaid"><code>flowchart TD
-    FAB[Fabricated HW/Platform] --&gt; INT[System Integration]
-    EXE[SW: Firmware/Drivers/Apps] --&gt; INT
-    INT --&gt; VAL[Validation]
-    VAL --&gt; PROD[Ship Product]</code></pre>
-<hr />
-<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>Electronic systems combine <strong>hardware + software + other disciplines</strong> to meet a defined need.</p>
+<p><strong>Contrast Waterfall vs Spiral</strong> for SW in SoC context.</p>
 </li>
 <li>
-<p>Compute choices range from <strong>fixed-behavior CPUs/accelerators</strong> to <strong>customizable ASIPs</strong>.</p>
+<p><strong>Name two execution platforms</strong> for ESL-driven SW dev.</p>
 </li>
 <li>
-<p><strong>MCUs</strong> integrate compute + peripherals on one die for embedded control; <strong>ASICs/SoCs</strong> tailor whole chips to applications.</p>
+<p><strong>Sketch SystemC toolchain</strong> from code to sim results.</p>
 </li>
-<li>
-<p>The <strong>VLSI flow</strong> transforms RTL → netlist → layout while verification ensures correctness.</p>
-</li>
-<li>
-<p><strong>Manufacturing &amp; ATE</strong> confirm defect-free parts; <strong>integration/validation</strong> demonstrates end-to-end behavior.</p>
-</li>
-</ul>
-<hr />
-<h2 id="references-further-reading">References &amp; Further Reading<a class="headerlink" href="#references-further-reading" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Saurabh, S. (2023). <em>Introduction to VLSI Design Flow</em>. Cambridge University Press.</li>
 </ul>
 
 
@@ -1337,7 +1185,7 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../lecture1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lecture 1">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1347,27 +1195,11 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Lecture 1
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../lecture2/" class="md-footer__link md-footer__link--next" aria-label="Next: Lecture 2">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Lecture 2
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
