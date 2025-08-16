@@ -6,15 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Study notes for Advanced Digital Design and Verification">
+        <meta name="description" content="Study Notes for ML">
       
       
         <meta name="author" content="Your Name">
       
       
+        <link rel="canonical" href="https://adityachauhan0.github.io/addv-notes/week1/lecture1/">
+      
       
         <link rel="prev" href="../..">
       
+      
+        <link rel="next" href="../lecture2/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,11 +26,14 @@
     
     
       
-        <title>Lecture 1 - ADDV Study Notes</title>
+        <title>Lec 1 - Amazon ML Study Notes</title>
       
     
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -40,8 +47,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
       
     
     
@@ -64,7 +71,14 @@
     body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -82,12 +96,16 @@
       
     </div>
     
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
     
       
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="ADDV Study Notes" class="md-header__button md-logo" aria-label="ADDV Study Notes" data-md-component="logo">
+    <a href="../.." title="Amazon ML Study Notes" class="md-header__button md-logo" aria-label="Amazon ML Study Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,18 +119,64 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ADDV Study Notes
+            Amazon ML Study Notes
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lecture 1
+              Lec 1
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Dark (slate/indigo)"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark (slate/indigo)" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Light (indigo/pink)"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light (indigo/pink)" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="amber"  aria-label="Light (cyan/amber)"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Light (cyan/amber)" for="__palette_3" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.5 12a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 17.5 9a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5m-3-4A1.5 1.5 0 0 1 13 6.5 1.5 1.5 0 0 1 14.5 5 1.5 1.5 0 0 1 16 6.5 1.5 1.5 0 0 1 14.5 8m-5 0A1.5 1.5 0 0 1 8 6.5 1.5 1.5 0 0 1 9.5 5 1.5 1.5 0 0 1 11 6.5 1.5 1.5 0 0 1 9.5 8m-3 4A1.5 1.5 0 0 1 5 10.5 1.5 1.5 0 0 1 6.5 9 1.5 1.5 0 0 1 8 10.5 1.5 1.5 0 0 1 6.5 12M12 3a9 9 0 0 0-9 9 9 9 0 0 0 9 9 1.5 1.5 0 0 0 1.5-1.5c0-.39-.15-.74-.39-1-.23-.27-.38-.62-.38-1a1.5 1.5 0 0 1 1.5-1.5H16a5 5 0 0 0 5-5c0-4.42-4.03-8-9-8"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Dark (green/lg)"  type="radio" name="__palette" id="__palette_3">
+    
+      <label class="md-header__button md-icon" title="Dark (green/lg)" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22A10 10 0 0 1 2 12 10 10 0 0 1 12 2c5.5 0 10 4 10 9a6 6 0 0 1-6 6h-1.8c-.3 0-.5.2-.5.5 0 .1.1.2.1.3.4.5.6 1.1.6 1.7.1 1.4-1 2.5-2.4 2.5m0-18a8 8 0 0 0-8 8 8 8 0 0 0 8 8c.3 0 .5-.2.5-.5 0-.2-.1-.3-.1-.4-.4-.5-.6-1-.6-1.6 0-1.4 1.1-2.5 2.5-2.5H16a4 4 0 0 0 4-4c0-3.9-3.6-7-8-7m-5.5 6c.8 0 1.5.7 1.5 1.5S7.3 13 6.5 13 5 12.3 5 11.5 5.7 10 6.5 10m3-4c.8 0 1.5.7 1.5 1.5S10.3 9 9.5 9 8 8.3 8 7.5 8.7 6 9.5 6m5 0c.8 0 1.5.7 1.5 1.5S15.3 9 14.5 9 13 8.3 13 7.5 13.7 6 14.5 6m3 4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -162,6 +226,18 @@
       
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/adityachauhan0/addv-notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    adityachauhan0/addv-notes
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -209,110 +285,13 @@
           
   
   
+    
+  
   Week 1
 
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../week2/lecture2.md" class="md-tabs__link">
-          
-  
-  
-  Week 2
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../week3/lecture3.md" class="md-tabs__link">
-          
-  
-  
-  Week 3
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../week4/lecture4.md" class="md-tabs__link">
-          
-  
-  
-  Week 4
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../week5/lecture5.md" class="md-tabs__link">
-          
-  
-  
-  Week 5
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../references.md" class="md-tabs__link">
-        
-  
-  
-    
-  
-  References
-
-      </a>
-    </li>
   
 
       
@@ -340,14 +319,26 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ADDV Study Notes" class="md-nav__button md-logo" aria-label="ADDV Study Notes" data-md-component="logo">
+    <a href="../.." title="Amazon ML Study Notes" class="md-nav__button md-logo" aria-label="Amazon ML Study Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    ADDV Study Notes
+    Amazon ML Study Notes
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adityachauhan0/addv-notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    adityachauhan0/addv-notes
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -382,6 +373,12 @@
   
   
     
+    
+      
+        
+      
+        
+      
     
     
     
@@ -440,7 +437,7 @@
   
   
   <span class="md-ellipsis">
-    Lecture 1
+    Lec 1
     
   </span>
   
@@ -453,7 +450,7 @@
   
   
   <span class="md-ellipsis">
-    Lecture 1
+    Lec 1
     
   </span>
   
@@ -685,54 +682,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Week 2
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Week 2
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -740,12 +689,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../week2/lecture2.md" class="md-nav__link">
+      <a href="../lecture2/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Lecture 2
+    Lec 2
     
   </span>
   
@@ -759,241 +708,6 @@
           </ul>
         </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Week 3
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Week 3
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../week3/lecture3.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lecture 3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Week 4
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Week 4
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../week4/lecture4.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lecture 4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Week 5
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Week 5
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../week5/lecture5.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lecture 5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../references.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    References
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1012,6 +726,22 @@
                 
                   
 
+
+  
+    <a href="https://github.com/adityachauhan0/addv-notes/edit/main/docs/week1/lecture1.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/adityachauhan0/addv-notes/raw/main/docs/week1/lecture1.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
 
 
 <h1 id="week-1-lecture-1-electronic-systems-implementation">Week 1 — Lecture 1: Electronic Systems &amp; Implementation<a class="headerlink" href="#week-1-lecture-1-electronic-systems-implementation" title="Permanent link">&para;</a></h1>
@@ -1040,54 +770,59 @@
 <p><strong>Electronic systems</strong>: systems designed to <strong>sense</strong>, <strong>process</strong>, and <strong>manipulate</strong> electronic signals.<br />
 Examples: mobile phone, computer, robot, television, EEG machine, etc.</p>
 <h3 id="systemelement-relationships-concept-map">System/Element relationships (concept map)<a class="headerlink" href="#systemelement-relationships-concept-map" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">A</span><span class="p">[</span><span class="n">System</span><span class="w"> </span><span class="n">Need</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="p">[</span><span class="n">System</span><span class="p">]</span>
-<span class="w">    </span><span class="n">B</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="p">[</span><span class="n">Elements</span><span class="p">]</span>
-<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C1</span><span class="p">[</span><span class="n">Hardware</span><span class="p">]</span>
-<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C2</span><span class="p">[</span><span class="n">Software</span><span class="p">]</span>
-<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C3</span><span class="p">[</span><span class="n">Equipment</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Facilities</span><span class="p">]</span>
-<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C4</span><span class="p">[</span><span class="n">Personnel</span><span class="p">]</span>
-<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C5</span><span class="p">[</span><span class="n">Processes</span><span class="p">]</span>
-<span class="w">    </span><span class="n">B</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="p">[</span><span class="n">Capabilities</span><span class="w"> </span><span class="n">Produced</span><span class="p">]</span>
-<span class="w">    </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E</span><span class="p">[</span><span class="n">Meets</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Need</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TD
+    A[System Need] --&gt; B[System]
+    B --&gt; C[Elements]
+    C --&gt; C1[Hardware]
+    C --&gt; C2[Software]
+    C --&gt; C3[Equipment &amp; Facilities]
+    C --&gt; C4[Personnel]
+    C --&gt; C5[Processes]
+    B --&gt; D[Capabilities Produced]
+    D --&gt; E[Meets the Need]</code></pre>
 <hr />
 <h2 id="2-components-of-electronic-systems">2) Components of Electronic Systems<a class="headerlink" href="#2-components-of-electronic-systems" title="Permanent link">&para;</a></h2>
 <p>Systems often comprise numerous subsystems built with <strong>diverse technologies</strong>; the overall functionality is <strong>richer</strong> than individual parts.</p>
-<p>=== "At a glance"  </p>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">S</span><span class="p">[</span><span class="s">&quot;Electronic System&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H</span><span class="p">[</span><span class="s">&quot;Hardware&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">S</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SW</span><span class="p">[</span><span class="s">&quot;Software&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">S</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">O</span><span class="p">[</span><span class="s">&quot;Other Components&quot;</span><span class="p">]</span>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">At a glance</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<pre class="mermaid"><code>flowchart TD
+    S["Electronic System"] --&gt; H["Hardware"]
+    S --&gt; SW["Software"]
+    S --&gt; O["Other Components"]
 
-<span class="w">    </span><span class="n">H</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H1</span><span class="p">[</span><span class="s">&quot;Processing&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">H</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H2</span><span class="p">[</span><span class="s">&quot;Storage (Memory)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">H</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H3</span><span class="p">[</span><span class="s">&quot;Sensing&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">H</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H4</span><span class="p">[</span><span class="s">&quot;Communication&quot;</span><span class="p">]</span>
+    H --&gt; H1["Processing"]
+    H --&gt; H2["Storage (Memory)"]
+    H --&gt; H3["Sensing"]
+    H --&gt; H4["Communication"]
 
-<span class="w">    </span><span class="n">SW</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SW1</span><span class="p">[</span><span class="s">&quot;System SW (OS, drivers)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SW</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SW2</span><span class="p">[</span><span class="s">&quot;Dev Tools (compiler, linker, debugger)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SW</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SW3</span><span class="p">[</span><span class="s">&quot;Application SW (GP/Specialized)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SW</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SW4</span><span class="p">[</span><span class="s">&quot;Firmware&quot;</span><span class="p">]</span>
+    SW --&gt; SW1["System SW (OS, drivers)"]
+    SW --&gt; SW2["Dev Tools (compiler, linker, debugger)"]
+    SW --&gt; SW3["Application SW (GP/Specialized)"]
+    SW --&gt; SW4["Firmware"]
 
-<span class="w">    </span><span class="n">O</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">O1</span><span class="p">[</span><span class="s">&quot;Packaging &amp; PCBs&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">O</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">O2</span><span class="p">[</span><span class="s">&quot;Mechanical parts (hinges, keyboard)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">O</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">O3</span><span class="p">[</span><span class="s">&quot;Power &amp; Thermal&quot;</span><span class="p">]</span>
-</code></pre></div>
-
-<p>=== "Key notes"<br />
-- <strong>Hardware (electronic)</strong>: compute, memory, sensors/actuators, I/O and comms.<br />
-- <strong>Software</strong>: system software, development toolchain, application software, firmware.<br />
-- <strong>Other components</strong>: packaging, PCB, mechanical parts, power delivery, etc.</p>
+    O --&gt; O1["Packaging &amp; PCBs"]
+    O --&gt; O2["Mechanical parts (hinges, keyboard)"]
+    O --&gt; O3["Power &amp; Thermal"]
+</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Key notes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<ul>
+<li><strong>Hardware (electronic)</strong>: compute, memory, sensors/actuators, I/O and comms.  </li>
+<li><strong>Software</strong>: system software, development toolchain, application software, firmware.  </li>
+<li><strong>Other components</strong>: packaging, PCB, mechanical parts, power delivery, etc.</li>
+</ul>
 <hr />
 <h2 id="3-hardware-processor-types">3) Hardware: Processor Types<a class="headerlink" href="#3-hardware-processor-types" title="Permanent link">&para;</a></h2>
 <p>Instruction-set/architecture determines <strong>customizability</strong>.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">LR</span>
-<span class="w">    </span><span class="n">P</span><span class="p">[</span><span class="n">Processors</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">F</span><span class="p">[</span><span class="n">Fixed</span><span class="w"> </span><span class="n">Behavior</span><span class="p">]</span>
-<span class="w">    </span><span class="n">P</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="p">[</span><span class="n">Customizable</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart LR
+    P[Processors] --&gt; F[Fixed Behavior]
+    P --&gt; C[Customizable]</code></pre>
 <h3 id="31-fixed-behavior-processors">3.1 Fixed-Behavior Processors<a class="headerlink" href="#31-fixed-behavior-processors" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -1111,15 +846,13 @@ Examples: mobile phone, computer, robot, television, EEG machine, etc.</p>
 </ul>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">FB</span><span class="p">[</span><span class="n">Fixed</span><span class="w"> </span><span class="n">Behavior</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">GP</span><span class="p">[</span><span class="n">General</span><span class="w"> </span><span class="n">Purpose</span><span class="w"> </span><span class="n">CPU</span><span class="p">]</span>
-<span class="w">    </span><span class="n">FB</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SP</span><span class="p">[</span><span class="n">Special</span><span class="w"> </span><span class="n">Purpose</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SP1</span><span class="p">[</span><span class="n">DSP</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SP2</span><span class="p">[</span><span class="n">Image</span><span class="o">/</span><span class="n">Video</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SP3</span><span class="p">[</span><span class="n">NPU</span><span class="o">/</span><span class="n">TPU</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SP4</span><span class="p">[</span><span class="n">GPU</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TD
+    FB[Fixed Behavior] --&gt; GP[General Purpose CPU]
+    FB --&gt; SP[Special Purpose]
+    SP --&gt; SP1[DSP]
+    SP --&gt; SP2[Image/Video]
+    SP --&gt; SP3[NPU/TPU]
+    SP --&gt; SP4[GPU]</code></pre>
 <h3 id="32-customizable-processors">3.2 Customizable Processors<a class="headerlink" href="#32-customizable-processors" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -1132,18 +865,17 @@ Examples: mobile phone, computer, robot, television, EEG machine, etc.</p>
 <p>Commercial examples include families like <strong>Xtensa</strong> and <strong>ARC-V</strong> with full toolchains.</p>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">C</span><span class="p">[</span><span class="s">&quot;Customizable&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">ASIP</span><span class="p">[</span><span class="s">&quot;ASIP (Extend ISA)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">CFG</span><span class="p">[</span><span class="s">&quot;Configurable Core&quot;</span><span class="p">]</span>
+<pre class="mermaid"><code>flowchart TD
+    C["Customizable"] --&gt; ASIP["ASIP (Extend ISA)"]
+    C --&gt; CFG["Configurable Core"]
 
-<span class="w">    </span><span class="n">ASIP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">T1</span><span class="p">[</span><span class="s">&quot;Custom Instructions&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">ASIP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">T2</span><span class="p">[</span><span class="s">&quot;Compiler/Toolchain Support&quot;</span><span class="p">]</span>
+    ASIP --&gt; T1["Custom Instructions"]
+    ASIP --&gt; T2["Compiler/Toolchain Support"]
 
-<span class="w">    </span><span class="n">CFG</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">P1</span><span class="p">[</span><span class="s">&quot;Pipeline/Issue Width&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">CFG</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">P2</span><span class="p">[</span><span class="s">&quot;Cache Sizes/Hierarchy&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">CFG</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">P3</span><span class="p">[</span><span class="s">&quot;Custom Interfaces/Accelerators&quot;</span><span class="p">]</span>
-</code></pre></div>
-
+    CFG --&gt; P1["Pipeline/Issue Width"]
+    CFG --&gt; P2["Cache Sizes/Hierarchy"]
+    CFG --&gt; P3["Custom Interfaces/Accelerators"]
+</code></pre>
 <hr />
 <h2 id="4-coprocessors">4) Coprocessors<a class="headerlink" href="#4-coprocessors" title="Permanent link">&para;</a></h2>
 <p><strong>Definition:</strong> An auxiliary processor that supplements the main CPU for certain tasks (e.g., floating-point, graphics, signal processing, crypto, I/O, AI/vision).</p>
@@ -1159,14 +891,12 @@ Examples: mobile phone, computer, robot, television, EEG machine, etc.</p>
 <p>Over time, popular coprocessor functions may migrate into CPUs.</p>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">LR</span>
-<span class="w">    </span><span class="n">CPU</span><span class="p">[</span><span class="n">Main</span><span class="w"> </span><span class="n">CPU</span><span class="p">]</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">offload</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">X1</span><span class="p">[</span><span class="n">FPU</span><span class="p">]</span>
-<span class="w">    </span><span class="n">CPU</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">offload</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">X2</span><span class="p">[</span><span class="n">GPU</span><span class="p">]</span>
-<span class="w">    </span><span class="n">CPU</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">offload</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">X3</span><span class="p">[</span><span class="n">AI</span><span class="o">/</span><span class="n">Vision</span><span class="p">]</span>
-<span class="w">    </span><span class="n">CPU</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">offload</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">X4</span><span class="p">[</span><span class="n">Crypto</span><span class="o">/</span><span class="n">Compression</span><span class="p">]</span>
-<span class="w">    </span><span class="n">CPU</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">offload</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">X5</span><span class="p">[</span><span class="n">Signal</span><span class="w"> </span><span class="n">Processing</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart LR
+    CPU[Main CPU] -- offload --&gt; X1[FPU]
+    CPU -- offload --&gt; X2[GPU]
+    CPU -- offload --&gt; X3[AI/Vision]
+    CPU -- offload --&gt; X4[Crypto/Compression]
+    CPU -- offload --&gt; X5[Signal Processing]</code></pre>
 <hr />
 <h2 id="5-microcontrollers-mcus">5) Microcontrollers (MCUs)<a class="headerlink" href="#5-microcontrollers-mcus" title="Permanent link">&para;</a></h2>
 <p><strong>One chip</strong> integrating <strong>CPU core(s) + memory + programmable I/O + peripherals</strong>.<br />
@@ -1193,29 +923,28 @@ Often used in embedded/real-time systems (robotics, automotive, medical, IoT).</
 </ul>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TB</span>
-<span class="w">    </span><span class="n">subgraph</span><span class="w"> </span><span class="n">MCU</span><span class="p">[</span><span class="s">&quot;Microcontroller (single IC)&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">CORE</span><span class="p">[</span><span class="s">&quot;Processor Core&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">MEM</span><span class="p">[</span><span class="s">&quot;Flash + SRAM&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">BUS</span><span class="p">[</span><span class="s">&quot;Internal Bus&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">TIM</span><span class="p">[</span><span class="s">&quot;Timers / PWM&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">GPIO</span><span class="p">[</span><span class="s">&quot;GPIO&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">ADC</span><span class="p">[</span><span class="s">&quot;ADC / DAC&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">COMM</span><span class="p">[</span><span class="s">&quot;UART / SPI / I2C / CAN&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="kd">end</span>
+<pre class="mermaid"><code>flowchart TB
+    subgraph MCU["Microcontroller (single IC)"]
+      CORE["Processor Core"]
+      MEM["Flash + SRAM"]
+      BUS["Internal Bus"]
+      TIM["Timers / PWM"]
+      GPIO["GPIO"]
+      ADC["ADC / DAC"]
+      COMM["UART / SPI / I2C / CAN"]
+    end
 
-<span class="w">    </span><span class="n">CORE</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;fetch/exec&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">MEM</span>
-<span class="w">    </span><span class="n">CORE</span><span class="w"> </span><span class="o">&lt;---&gt;</span><span class="w"> </span><span class="n">BUS</span>
-<span class="w">    </span><span class="n">BUS</span><span class="w"> </span><span class="o">&lt;---&gt;</span><span class="w"> </span><span class="n">TIM</span>
-<span class="w">    </span><span class="n">BUS</span><span class="w"> </span><span class="o">&lt;---&gt;</span><span class="w"> </span><span class="n">GPIO</span>
-<span class="w">    </span><span class="n">BUS</span><span class="w"> </span><span class="o">&lt;---&gt;</span><span class="w"> </span><span class="n">ADC</span>
-<span class="w">    </span><span class="n">BUS</span><span class="w"> </span><span class="o">&lt;---&gt;</span><span class="w"> </span><span class="n">COMM</span>
+    CORE -- "fetch/exec" --&gt; MEM
+    CORE &lt;---&gt; BUS
+    BUS &lt;---&gt; TIM
+    BUS &lt;---&gt; GPIO
+    BUS &lt;---&gt; ADC
+    BUS &lt;---&gt; COMM
 
-<span class="w">    </span><span class="n">GPIO</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">OUT</span><span class="p">[</span><span class="s">&quot;Actuators/Motors (via drivers)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">GPIO</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="kr">IN</span><span class="p">[</span><span class="s">&quot;Sensors/Buttons&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">ADC</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SENS</span><span class="p">[</span><span class="s">&quot;Analog Sensors&quot;</span><span class="p">]</span>
-</code></pre></div>
-
+    GPIO --&gt; OUT["Actuators/Motors (via drivers)"]
+    GPIO --&gt; IN["Sensors/Buttons"]
+    ADC --&gt; SENS["Analog Sensors"]
+</code></pre>
 <p><strong>Microcontroller vs SoC:</strong> an SoC is generally broader (may integrate multi-core CPUs, GPUs, memory controllers, etc.). An SoC can include MCU-like subsystems.</p>
 <hr />
 <h2 id="6-asics">6) ASICs<a class="headerlink" href="#6-asics" title="Permanent link">&para;</a></h2>
@@ -1246,44 +975,41 @@ Often used in embedded/real-time systems (robotics, automotive, medical, IoT).</
 <p>Storage and I/O controllers</p>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TB</span>
-<span class="w">    </span><span class="n">subgraph</span><span class="w"> </span><span class="n">ASIC</span><span class="p">[</span><span class="s">&quot;ASIC / SoC (high-level)&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">CPU1</span><span class="p">[</span><span class="n">CPU</span><span class="w"> </span><span class="n">Cluster</span><span class="p">]</span>
-<span class="w">      </span><span class="n">ACC1</span><span class="p">[</span><span class="n">Domain</span><span class="w"> </span><span class="n">Accelerator</span><span class="p">]</span>
-<span class="w">      </span><span class="n">MEM1</span><span class="p">[</span><span class="n">SRAM</span><span class="o">/</span><span class="n">TCAM</span><span class="o">/</span><span class="n">Cache</span><span class="p">]</span>
-<span class="w">      </span><span class="n">PERI</span><span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">O</span><span class="w"> </span><span class="n">Peripherals</span><span class="p">]</span>
-<span class="w">      </span><span class="n">BUS1</span><span class="p">[</span><span class="n">Interconnect</span><span class="o">/</span><span class="n">Fabric</span><span class="p">]</span>
-<span class="w">      </span><span class="n">PWR</span><span class="p">[</span><span class="n">Power</span><span class="o">/</span><span class="n">Clock</span><span class="o">/</span><span class="n">Reset</span><span class="p">]</span>
-<span class="w">    </span><span class="n">end</span>
-<span class="w">    </span><span class="n">CPU1</span><span class="w"> </span><span class="o">&lt;--&gt;</span><span class="w"> </span><span class="n">BUS1</span>
-<span class="w">    </span><span class="n">ACC1</span><span class="w"> </span><span class="o">&lt;--&gt;</span><span class="w"> </span><span class="n">BUS1</span>
-<span class="w">    </span><span class="n">MEM1</span><span class="w"> </span><span class="o">&lt;--&gt;</span><span class="w"> </span><span class="n">BUS1</span>
-<span class="w">    </span><span class="n">PERI</span><span class="w"> </span><span class="o">&lt;--&gt;</span><span class="w"> </span><span class="n">BUS1</span>
-<span class="w">    </span><span class="n">PWR</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">CPU1</span>
-<span class="w">    </span><span class="n">PWR</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">ACC1</span>
-<span class="w">    </span><span class="n">PWR</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">MEM1</span>
-<span class="w">    </span><span class="n">PWR</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PERI</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TB
+    subgraph ASIC["ASIC / SoC (high-level)"]
+      CPU1[CPU Cluster]
+      ACC1[Domain Accelerator]
+      MEM1[SRAM/TCAM/Cache]
+      PERI[I/O Peripherals]
+      BUS1[Interconnect/Fabric]
+      PWR[Power/Clock/Reset]
+    end
+    CPU1 &lt;--&gt; BUS1
+    ACC1 &lt;--&gt; BUS1
+    MEM1 &lt;--&gt; BUS1
+    PERI &lt;--&gt; BUS1
+    PWR --&gt; CPU1
+    PWR --&gt; ACC1
+    PWR --&gt; MEM1
+    PWR --&gt; PERI</code></pre>
 <hr />
 <h2 id="7-memory-landscape">7) Memory Landscape<a class="headerlink" href="#7-memory-landscape" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TB</span>
-<span class="w">    </span><span class="n">M</span><span class="p">[</span><span class="s">&quot;Memory&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">NVM</span><span class="p">[</span><span class="s">&quot;ROM (Non-Volatile)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">M</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">VM</span><span class="p">[</span><span class="s">&quot;RAM (Volatile)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">M</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">EXT</span><span class="p">[</span><span class="s">&quot;External Storage&quot;</span><span class="p">]</span>
+<pre class="mermaid"><code>flowchart TB
+    M["Memory"] --&gt; NVM["ROM (Non-Volatile)"]
+    M --&gt; VM["RAM (Volatile)"]
+    M --&gt; EXT["External Storage"]
 
-<span class="w">    </span><span class="n">NVM</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PROM</span><span class="p">[</span><span class="s">&quot;PROM&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">NVM</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">EPROM</span><span class="p">[</span><span class="s">&quot;EPROM&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">NVM</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">FLASH</span><span class="p">[</span><span class="s">&quot;Flash&quot;</span><span class="p">]</span>
+    NVM --&gt; PROM["PROM"]
+    NVM --&gt; EPROM["EPROM"]
+    NVM --&gt; FLASH["Flash"]
 
-<span class="w">    </span><span class="n">VM</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SRAM</span><span class="p">[</span><span class="s">&quot;SRAM&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">VM</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DRAM</span><span class="p">[</span><span class="s">&quot;DRAM&quot;</span><span class="p">]</span>
+    VM --&gt; SRAM["SRAM"]
+    VM --&gt; DRAM["DRAM"]
 
-<span class="w">    </span><span class="n">EXT</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">HDD</span><span class="p">[</span><span class="s">&quot;Hard Disk&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">EXT</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">ODD</span><span class="p">[</span><span class="s">&quot;Optical (CD/DVD)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">EXT</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">USB</span><span class="p">[</span><span class="s">&quot;USB Flash&quot;</span><span class="p">]</span>
-</code></pre></div>
-
+    EXT --&gt; HDD["Hard Disk"]
+    EXT --&gt; ODD["Optical (CD/DVD)"]
+    EXT --&gt; USB["USB Flash"]
+</code></pre>
 <p><strong>Notes</strong></p>
 <ul>
 <li>
@@ -1313,67 +1039,62 @@ Often used in embedded/real-time systems (robotics, automotive, medical, IoT).</
 <p><strong>Firmware:</strong> machine instructions embedded in devices (cameras, phones, NICs, printers, routers, remotes).</p>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">LR</span>
-<span class="w">    </span><span class="n">SW</span><span class="p">[</span><span class="n">Software</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SYS</span><span class="p">[</span><span class="n">System</span><span class="w"> </span><span class="n">SW</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SW</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DEV</span><span class="p">[</span><span class="n">Dev</span><span class="w"> </span><span class="n">Toolchain</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SW</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">APP</span><span class="p">[</span><span class="n">Application</span><span class="w"> </span><span class="n">SW</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SW</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">FWM</span><span class="p">[</span><span class="n">Firmware</span><span class="p">]</span>
+<pre class="mermaid"><code>flowchart LR
+    SW[Software] --&gt; SYS[System SW]
+    SW --&gt; DEV[Dev Toolchain]
+    SW --&gt; APP[Application SW]
+    SW --&gt; FWM[Firmware]
 
-<span class="w">    </span><span class="n">SYS</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">OS</span><span class="p">[</span><span class="n">Operating</span><span class="w"> </span><span class="n">System</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SYS</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DRV</span><span class="p">[</span><span class="n">Device</span><span class="w"> </span><span class="n">Drivers</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SYS</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">BOOT</span><span class="p">[</span><span class="n">Boot</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">BIOS</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">UEFI</span><span class="p">]</span>
-<span class="w">    </span><span class="n">DEV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">COMP</span><span class="p">[</span><span class="n">Compiler</span><span class="o">/</span><span class="n">Assembler</span><span class="p">]</span>
-<span class="w">    </span><span class="n">DEV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">LINK</span><span class="p">[</span><span class="n">Linker</span><span class="o">/</span><span class="n">Loader</span><span class="p">]</span>
-<span class="w">    </span><span class="n">DEV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DBG</span><span class="p">[</span><span class="n">Debugger</span><span class="o">/</span><span class="n">Profiler</span><span class="p">]</span>
-<span class="w">    </span><span class="n">APP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">GP</span><span class="p">[</span><span class="n">General</span><span class="w"> </span><span class="n">Purpose</span><span class="p">]</span>
-<span class="w">    </span><span class="n">APP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SPEC</span><span class="p">[</span><span class="n">Specialized</span><span class="o">/</span><span class="n">Domain</span><span class="p">]</span>
-</code></pre></div>
-
+    SYS --&gt; OS[Operating System]
+    SYS --&gt; DRV[Device Drivers]
+    SYS --&gt; BOOT[Boot / BIOS / UEFI]
+    DEV --&gt; COMP[Compiler/Assembler]
+    DEV --&gt; LINK[Linker/Loader]
+    DEV --&gt; DBG[Debugger/Profiler]
+    APP --&gt; GP[General Purpose]
+    APP --&gt; SPEC[Specialized/Domain]</code></pre>
 <hr />
 <h2 id="9-hardware-software-in-a-mobile-device-conceptual">9) Hardware + Software in a Mobile Device (conceptual)<a class="headerlink" href="#9-hardware-software-in-a-mobile-device-conceptual" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TB</span>
-<span class="w">    </span><span class="n">subgraph</span><span class="w"> </span><span class="n">Phone</span><span class="p">[</span><span class="s">&quot;Mobile Phone (Conceptual Stack)&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="n">subgraph</span><span class="w"> </span><span class="n">HW</span><span class="p">[</span><span class="s">&quot;Hardware&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">RF</span><span class="p">[</span><span class="s">&quot;RF Front-end&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">AP</span><span class="p">[</span><span class="s">&quot;Application Processor / SoC&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">MEM</span><span class="p">[</span><span class="s">&quot;LPDDR / eMMC / UFS&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">PER</span><span class="p">[</span><span class="s">&quot;Peripherals: Sensor, Display, Camera, Audio, BT/WiFi&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">PWR</span><span class="p">[</span><span class="s">&quot;PMIC/Battery&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="kd">end</span>
-<span class="w">      </span><span class="n">subgraph</span><span class="w"> </span><span class="n">SWStack</span><span class="p">[</span><span class="s">&quot;Software&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">K</span><span class="p">[</span><span class="s">&quot;Linux Kernel / RTOS&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">HAL</span><span class="p">[</span><span class="s">&quot;Hardware Abstraction Layer&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">SS</span><span class="p">[</span><span class="s">&quot;System Services &amp; Daemons&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">RT</span><span class="p">[</span><span class="s">&quot;Runtime (e.g., Android Runtime)&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">API</span><span class="p">[</span><span class="s">&quot;System APIs&quot;</span><span class="p">]</span>
-<span class="w">        </span><span class="n">APP</span><span class="p">[</span><span class="s">&quot;Apps (System/Privileged/3rd-party)&quot;</span><span class="p">]</span>
-<span class="w">      </span><span class="kd">end</span>
-<span class="w">    </span><span class="kd">end</span>
+<pre class="mermaid"><code>flowchart TB
+    subgraph Phone["Mobile Phone (Conceptual Stack)"]
+      subgraph HW["Hardware"]
+        RF["RF Front-end"]
+        AP["Application Processor / SoC"]
+        MEM["LPDDR / eMMC / UFS"]
+        PER["Peripherals: Sensor, Display, Camera, Audio, BT/WiFi"]
+        PWR["PMIC/Battery"]
+      end
+      subgraph SWStack["Software"]
+        K["Linux Kernel / RTOS"]
+        HAL["Hardware Abstraction Layer"]
+        SS["System Services &amp; Daemons"]
+        RT["Runtime (e.g., Android Runtime)"]
+        API["System APIs"]
+        APP["Apps (System/Privileged/3rd-party)"]
+      end
+    end
 
-<span class="w">    </span><span class="n">HW</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SWStack</span>
-<span class="w">    </span><span class="n">API</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">APP</span>
-<span class="w">    </span><span class="n">SS</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">RT</span>
-<span class="w">    </span><span class="n">HAL</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">K</span>
-<span class="w">    </span><span class="n">K</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">AP</span>
-<span class="w">    </span><span class="n">AP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">MEM</span>
-<span class="w">    </span><span class="n">AP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PER</span>
-</code></pre></div>
-
+    HW --&gt; SWStack
+    API --&gt; APP
+    SS --&gt; RT
+    HAL --&gt; K
+    K --&gt; AP
+    AP --&gt; MEM
+    AP --&gt; PER
+</code></pre>
 <hr />
 <h2 id="10-system-implementation-birds-eye-view">10) System Implementation — Bird’s-Eye View<a class="headerlink" href="#10-system-implementation-birds-eye-view" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">SF</span><span class="p">[</span><span class="n">System</span><span class="w"> </span><span class="n">Functionality</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Requirements</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PART</span><span class="p">[</span><span class="n">Partitioning</span><span class="p">]</span>
-<span class="w">    </span><span class="n">PART</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">HWF</span><span class="p">[</span><span class="n">HW</span><span class="w"> </span><span class="n">Functionality</span><span class="p">]</span>
-<span class="w">    </span><span class="n">PART</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SWF</span><span class="p">[</span><span class="n">SW</span><span class="w"> </span><span class="n">Functionality</span><span class="p">]</span>
-<span class="w">    </span><span class="n">HWF</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">IC</span><span class="p">[</span><span class="n">IC</span><span class="w"> </span><span class="n">Design</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Fabrication</span><span class="p">]</span>
-<span class="w">    </span><span class="n">IC</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">FAB</span><span class="p">[</span><span class="n">Fabricated</span><span class="w"> </span><span class="n">ICs</span><span class="o">/</span><span class="n">SoCs</span><span class="o">/</span><span class="n">Peripherals</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SWF</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SWDEV</span><span class="p">[</span><span class="n">Software</span><span class="w"> </span><span class="n">Development</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SWDEV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">EXE</span><span class="p">[</span><span class="n">Executables</span><span class="o">:</span><span class="w"> </span><span class="n">Firmware</span><span class="p">,</span><span class="w"> </span><span class="n">Drivers</span><span class="p">,</span><span class="w"> </span><span class="n">Apps</span><span class="p">]</span>
-<span class="w">    </span><span class="n">FAB</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">INT</span><span class="p">[</span><span class="n">System</span><span class="w"> </span><span class="n">Integration</span><span class="p">,</span><span class="w"> </span><span class="n">Validation</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Test</span><span class="p">]</span>
-<span class="w">    </span><span class="n">EXE</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">INT</span>
-<span class="w">    </span><span class="n">INT</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PROD</span><span class="p">[</span><span class="n">Product</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TD
+    SF[System Functionality / Requirements] --&gt; PART[Partitioning]
+    PART --&gt; HWF[HW Functionality]
+    PART --&gt; SWF[SW Functionality]
+    HWF --&gt; IC[IC Design &amp; Fabrication]
+    IC --&gt; FAB[Fabricated ICs/SoCs/Peripherals]
+    SWF --&gt; SWDEV[Software Development]
+    SWDEV --&gt; EXE[Executables: Firmware, Drivers, Apps]
+    FAB --&gt; INT[System Integration, Validation &amp; Test]
+    EXE --&gt; INT
+    INT --&gt; PROD[Product]</code></pre>
 <p><strong>Project-level actions</strong></p>
 <ol>
 <li>
@@ -1399,25 +1120,22 @@ Often used in embedded/real-time systems (robotics, automotive, medical, IoT).</
 <p><strong>Physical Design:</strong> Convert <strong>netlist</strong> → <strong>layout (GDS)</strong> ready for fabrication.</p>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">LR</span>
-<span class="w">    </span><span class="n">RTL</span><span class="p">[</span><span class="s">&quot;RTL&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SYN</span><span class="p">[</span><span class="s">&quot;Logic Synthesis&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">SYN</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">NET</span><span class="p">[</span><span class="s">&quot;Gate-level Netlist&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">NET</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PD</span><span class="p">[</span><span class="s">&quot;Physical Design&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">PD</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">LAYOUT</span><span class="p">[</span><span class="s">&quot;Layout (GDS)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">LAYOUT</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">FAB</span><span class="p">[</span><span class="s">&quot;Fabrication&quot;</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart LR
+    RTL["RTL"] --&gt; SYN["Logic Synthesis"]
+    SYN --&gt; NET["Gate-level Netlist"]
+    NET --&gt; PD["Physical Design"]
+    PD --&gt; LAYOUT["Layout (GDS)"]
+    LAYOUT --&gt; FAB["Fabrication"]
+</code></pre>
 <p><strong>Typical physical design tasks</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TB</span>
-<span class="w">    </span><span class="n">A</span><span class="p">[</span><span class="n">Netlist</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="p">[</span><span class="n">Chip</span><span class="w"> </span><span class="n">Planning</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Floorplanning</span><span class="p">]</span>
-<span class="w">    </span><span class="n">B</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="p">[</span><span class="n">Placement</span><span class="p">]</span>
-<span class="w">    </span><span class="n">C</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="p">[</span><span class="n">Clock</span><span class="w"> </span><span class="n">Tree</span><span class="w"> </span><span class="n">Synthesis</span><span class="p">]</span>
-<span class="w">    </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E</span><span class="p">[</span><span class="n">Global</span><span class="w"> </span><span class="n">Routing</span><span class="p">]</span>
-<span class="w">    </span><span class="n">E</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">F</span><span class="p">[</span><span class="n">Detailed</span><span class="w"> </span><span class="n">Routing</span><span class="p">]</span>
-<span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">G</span><span class="p">[</span><span class="n">ECO</span><span class="o">/</span><span class="n">Design</span><span class="w"> </span><span class="n">Fixes</span><span class="p">]</span>
-<span class="w">    </span><span class="n">G</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H</span><span class="p">[</span><span class="n">Write</span><span class="w"> </span><span class="n">GDS</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TB
+    A[Netlist] --&gt; B[Chip Planning / Floorplanning]
+    B --&gt; C[Placement]
+    C --&gt; D[Clock Tree Synthesis]
+    D --&gt; E[Global Routing]
+    E --&gt; F[Detailed Routing]
+    F --&gt; G[ECO/Design Fixes]
+    G --&gt; H[Write GDS]</code></pre>
 <hr />
 <h2 id="12-hardware-design-verification">12) Hardware Design Verification<a class="headerlink" href="#12-hardware-design-verification" title="Permanent link">&para;</a></h2>
 <p><strong>Goal:</strong> Ensure the design <strong>implements the intended functionality</strong> under constraints.<br />
@@ -1452,51 +1170,44 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
 </ul>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">V</span><span class="p">[</span><span class="n">Verification</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">FV</span><span class="p">[</span><span class="n">Functional</span><span class="w"> </span><span class="n">Verification</span><span class="p">]</span>
-<span class="w">    </span><span class="n">V</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PV</span><span class="p">[</span><span class="n">Physical</span><span class="w"> </span><span class="n">Verification</span><span class="p">]</span>
-<span class="w">    </span><span class="n">FV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SIM</span><span class="p">[</span><span class="n">Simulation</span><span class="o">-</span><span class="n">based</span><span class="p">]</span>
-<span class="w">    </span><span class="n">FV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">FORM</span><span class="p">[</span><span class="n">Formal</span><span class="w"> </span><span class="n">Methods</span><span class="p">]</span>
-<span class="w">    </span><span class="n">FV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">EQ</span><span class="p">[</span><span class="n">Equivalence</span><span class="w"> </span><span class="n">Checking</span><span class="p">]</span>
-<span class="w">    </span><span class="n">PV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DRC</span><span class="p">[</span><span class="n">DRC</span><span class="o">/</span><span class="n">ERC</span><span class="o">/</span><span class="n">LVS</span><span class="p">]</span>
-<span class="w">    </span><span class="n">PV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">STA</span><span class="p">[</span><span class="n">STA</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Timing</span><span class="w"> </span><span class="n">Reports</span><span class="p">]</span>
-<span class="w">    </span><span class="n">PV</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">SI</span><span class="p">[</span><span class="n">SI</span><span class="o">/</span><span class="n">IR</span><span class="w"> </span><span class="n">drop</span><span class="o">/</span><span class="n">EM</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TD
+    V[Verification] --&gt; FV[Functional Verification]
+    V --&gt; PV[Physical Verification]
+    FV --&gt; SIM[Simulation-based]
+    FV --&gt; FORM[Formal Methods]
+    FV --&gt; EQ[Equivalence Checking]
+    PV --&gt; DRC[DRC/ERC/LVS]
+    PV --&gt; STA[STA &amp; Timing Reports]
+    PV --&gt; SI[SI/IR drop/EM]</code></pre>
 <hr />
 <h2 id="13-hardware-manufacturing-test">13) Hardware Manufacturing &amp; Test<a class="headerlink" href="#13-hardware-manufacturing-test" title="Permanent link">&para;</a></h2>
 <p><strong>Input:</strong> Final <strong>GDS</strong> from physical design.<br />
 <strong>Output:</strong> <strong>Chips</strong> that pass production test.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">G</span><span class="p">[</span><span class="n">GDS</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PRE</span><span class="p">[</span><span class="n">Pre</span><span class="o">-</span><span class="n">process</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Mask</span><span class="w"> </span><span class="n">Prep</span><span class="p">]</span>
-<span class="w">    </span><span class="n">PRE</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">WAF</span><span class="p">[</span><span class="n">Wafer</span><span class="w"> </span><span class="n">Fabrication</span><span class="p">]</span>
-<span class="w">    </span><span class="n">WAF</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DIE</span><span class="p">[</span><span class="n">Die</span><span class="w"> </span><span class="n">Testing</span><span class="p">]</span>
-<span class="w">    </span><span class="n">DIE</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PKG</span><span class="p">[</span><span class="n">Packaging</span><span class="p">]</span>
-<span class="w">    </span><span class="n">PKG</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">FT</span><span class="p">[</span><span class="n">Final</span><span class="w"> </span><span class="n">Testing</span><span class="p">]</span>
-<span class="w">    </span><span class="n">FT</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">CHIP</span><span class="p">[</span><span class="n">Chips</span><span class="w"> </span><span class="n">Shipped</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TD
+    G[GDS] --&gt; PRE[Pre-process &amp; Mask Prep]
+    PRE --&gt; WAF[Wafer Fabrication]
+    WAF --&gt; DIE[Die Testing]
+    DIE --&gt; PKG[Packaging]
+    PKG --&gt; FT[Final Testing]
+    FT --&gt; CHIP[Chips Shipped]</code></pre>
 <p><strong>Device-level test loop (ATE)</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">LR</span>
-<span class="w">    </span><span class="n">TP</span><span class="p">[</span><span class="n">Test</span><span class="w"> </span><span class="n">Patterns</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DIEU</span><span class="p">[</span><span class="n">Die</span><span class="w"> </span><span class="n">Under</span><span class="w"> </span><span class="n">Test</span><span class="p">]</span>
-<span class="w">    </span><span class="n">ER</span><span class="p">[</span><span class="n">Expected</span><span class="w"> </span><span class="n">Responses</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">CMP</span><span class="p">{</span><span class="n">Match</span><span class="o">?</span><span class="p">}</span>
-<span class="w">    </span><span class="n">DIEU</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">AR</span><span class="p">[</span><span class="n">Actual</span><span class="w"> </span><span class="n">Responses</span><span class="p">]</span>
-<span class="w">    </span><span class="n">AR</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">CMP</span>
-<span class="w">    </span><span class="n">ER</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">CMP</span>
-<span class="w">    </span><span class="n">CMP</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">Yes</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PASS</span><span class="p">[</span><span class="n">Test</span><span class="w"> </span><span class="n">Pass</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Accept</span><span class="p">]</span>
-<span class="w">    </span><span class="n">CMP</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">FAIL</span><span class="p">[</span><span class="n">Test</span><span class="w"> </span><span class="n">Fail</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Reject</span><span class="o">/</span><span class="n">Diagnose</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart LR
+    TP[Test Patterns] --&gt; DIEU[Die Under Test]
+    ER[Expected Responses] --&gt; CMP{Match?}
+    DIEU --&gt; AR[Actual Responses]
+    AR --&gt; CMP
+    ER --&gt; CMP
+    CMP -- Yes --&gt; PASS[Test Pass / Accept]
+    CMP -- No --&gt; FAIL[Test Fail / Reject/Diagnose]</code></pre>
 <hr />
 <h2 id="14-software-development-process">14) Software Development Process<a class="headerlink" href="#14-software-development-process" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">PLAN</span><span class="p">[</span><span class="s">&quot;Planning &amp; Requirement Analysis&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">ARCH</span><span class="p">[</span><span class="s">&quot;Designing Architecture&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">ARCH</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">CODE</span><span class="p">[</span><span class="s">&quot;Implementation / Coding&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">CODE</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">TEST</span><span class="p">[</span><span class="s">&quot;Testing (manual &amp; automated)&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">TEST</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">DEP</span><span class="p">[</span><span class="s">&quot;Deployment &amp; Integration&quot;</span><span class="p">]</span>
-<span class="w">    </span><span class="n">DEP</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">MAINT</span><span class="p">[</span><span class="s">&quot;Maintenance (bug fixes, enhancements, support)&quot;</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TD
+    PLAN["Planning &amp; Requirement Analysis"] --&gt; ARCH["Designing Architecture"]
+    ARCH --&gt; CODE["Implementation / Coding"]
+    CODE --&gt; TEST["Testing (manual &amp; automated)"]
+    TEST --&gt; DEP["Deployment &amp; Integration"]
+    DEP --&gt; MAINT["Maintenance (bug fixes, enhancements, support)"]
+</code></pre>
 <ul>
 <li>
 <p><strong>Planning:</strong> resources, schedules, functional and technical definitions, documentation.</p>
@@ -1539,13 +1250,11 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
 </ul>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
-<span class="w">    </span><span class="n">FAB</span><span class="p">[</span><span class="n">Fabricated</span><span class="w"> </span><span class="n">HW</span><span class="o">/</span><span class="n">Platform</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">INT</span><span class="p">[</span><span class="n">System</span><span class="w"> </span><span class="n">Integration</span><span class="p">]</span>
-<span class="w">    </span><span class="n">EXE</span><span class="p">[</span><span class="n">SW</span><span class="o">:</span><span class="w"> </span><span class="n">Firmware</span><span class="o">/</span><span class="n">Drivers</span><span class="o">/</span><span class="n">Apps</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">INT</span>
-<span class="w">    </span><span class="n">INT</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">VAL</span><span class="p">[</span><span class="n">Validation</span><span class="p">]</span>
-<span class="w">    </span><span class="n">VAL</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">PROD</span><span class="p">[</span><span class="n">Ship</span><span class="w"> </span><span class="n">Product</span><span class="p">]</span>
-</code></pre></div>
-
+<pre class="mermaid"><code>flowchart TD
+    FAB[Fabricated HW/Platform] --&gt; INT[System Integration]
+    EXE[SW: Firmware/Drivers/Apps] --&gt; INT
+    INT --&gt; VAL[Validation]
+    VAL --&gt; PROD[Ship Product]</code></pre>
 <hr />
 <h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1590,7 +1299,7 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 16, 2025 08:21:44 UTC">August 16, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 16, 2025 08:25:14 UTC">August 16, 2025</span>
   </span>
 
     
@@ -1608,6 +1317,8 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -1620,6 +1331,46 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../lecture2/" class="md-footer__link md-footer__link--next" aria-label="Next: Lec 2">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Lec 2
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1642,7 +1393,7 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
       
       
     
-    <a href="https://github.com/yourusername" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/adityachauhan0" target="_blank" rel="noopener" title="github.com" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
@@ -1653,8 +1404,19 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
       
       
     
-    <a href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+    <a href="https://www.linkedin.com/in/username/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/username" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
     </a>
   
 </div>
@@ -1671,7 +1433,7 @@ Performed <strong>at multiple stages</strong> of the VLSI flow.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "toc.integrate", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "toc.integrate", "content.code.copy", "content.action.edit", "content.action.view", "search.suggest", "search.highlight", "navigation.instant", "navigation.indexes", "navigation.footer", "header.autohide", "content.tabs.link", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
