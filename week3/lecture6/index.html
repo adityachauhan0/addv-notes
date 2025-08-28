@@ -12,13 +12,11 @@
         <meta name="author" content="Your Name">
       
       
-        <link rel="canonical" href="https://adityachauhan0.github.io/addv-notes/week1/lecture2/">
+        <link rel="canonical" href="https://adityachauhan0.github.io/addv-notes/week3/lecture6/">
       
       
-        <link rel="prev" href="../lecture1/">
+        <link rel="prev" href="../lecture5/">
       
-      
-        <link rel="next" href="../../week2/lecture3/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +24,7 @@
     
     
       
-        <title>Lec 2 - ADDV Notes</title>
+        <title>Lec 6 - ADDV Notes</title>
       
     
     
@@ -87,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#week-1-lecture-2-electronic-system-level-esl-design" class="md-skip">
+        <a href="#week-3-lecture-2-systemc-communication-and-tlm" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lec 2
+              Lec 6
             
           </span>
         </div>
@@ -275,13 +273,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../lecture1/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../week1/lecture1/" class="md-tabs__link">
           
   
   
@@ -321,11 +317,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../week3/lecture5/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../lecture5/" class="md-tabs__link">
           
   
   
@@ -412,10 +410,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -427,20 +423,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -453,7 +446,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Week 1
@@ -467,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lecture1/" class="md-nav__link">
+      <a href="../../week1/lecture1/" class="md-nav__link">
         
   
   
@@ -487,32 +480,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Lec 2
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../week1/lecture2/" class="md-nav__link">
         
   
   
@@ -523,119 +494,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
-    <span class="md-ellipsis">
-      TL;DR
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#motivation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Motivation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-esl" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is ESL?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What is ESL?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#abstraction-contrast" class="md-nav__link">
-    <span class="md-ellipsis">
-      Abstraction contrast
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decisions-deliverables-at-esl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Decisions &amp; Deliverables at ESL
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#specifications-executable-specs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Specifications &amp; Executable Specs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Specifications &amp; Executable Specs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#levels-of-executable-spec" class="md-nav__link">
-    <span class="md-ellipsis">
-      Levels of executable spec
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analysis-modifications-at-esl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analysis &amp; Modifications at ESL
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#partitioning-hw-vs-sw" class="md-nav__link">
-    <span class="md-ellipsis">
-      Partitioning (HW vs SW)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -752,8 +610,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -765,17 +625,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -788,7 +651,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Week 3
@@ -802,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../week3/lecture5/" class="md-nav__link">
+      <a href="../lecture5/" class="md-nav__link">
         
   
   
@@ -822,10 +685,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../week3/lecture6/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lec 6
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -836,6 +721,158 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-channels-in-systemc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Channels in SystemC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mutual-exclusion-sc_mutex" class="md-nav__link">
+    <span class="md-ellipsis">
+      2) Mutual Exclusion — sc_mutex
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-resource-pooling-sc_semaphore" class="md-nav__link">
+    <span class="md-ellipsis">
+      3) Resource Pooling — sc_semaphore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fifo-queues-sc_fifot" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) FIFO Queues — sc_fifo&lt;T&gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-clock-channel-sc_clock" class="md-nav__link">
+    <span class="md-ellipsis">
+      5) Clock Channel — sc_clock
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-transaction-level-models-tlm" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) Transaction-Level Models (TLM)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6) Transaction-Level Models (TLM)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-with-hdl-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem with HDL Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tlm-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      TLM Approach
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-tlm-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      7) TLM Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-timing-styles-in-tlm" class="md-nav__link">
+    <span class="md-ellipsis">
+      8) Timing Styles in TLM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-tlm-20-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      9) TLM-2.0 Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-tlm-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      10) TLM Communication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-initiators-and-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      11) Initiators and Targets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -864,7 +901,7 @@
 
 
   
-    <a href="https://github.com/adityachauhan0/addv-notes/edit/main/docs/week1/lecture2.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/adityachauhan0/addv-notes/edit/main/docs/week3/lecture6.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -873,505 +910,235 @@
     
       
     
-    <a href="https://github.com/adityachauhan0/addv-notes/raw/main/docs/week1/lecture2.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/adityachauhan0/addv-notes/raw/main/docs/week3/lecture6.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="week-1-lecture-2-electronic-system-level-esl-design">Week 1 – Lecture 2: Electronic System Level (ESL) Design<a class="headerlink" href="#week-1-lecture-2-electronic-system-level-esl-design" title="Permanent link">&para;</a></h1>
-<p><strong>Course:</strong> Advanced Digital Design and Verification<br />
-<strong>Instructor:</strong> Sneh Saurabh • <strong>Date:</strong> 14 Aug 2025</p>
+<h1 id="week-3-lecture-2-systemc-communication-and-tlm">Week 3 — Lecture 2: SystemC Communication and TLM<a class="headerlink" href="#week-3-lecture-2-systemc-communication-and-tlm" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><em>Course:</em> <strong>Advanced Digital Design and Verification</strong><br />
+<em>Instructor:</em> <strong>Sneh Saurabh</strong> • <em>Date:</em> <strong>28 Aug 2025</strong><br />
+<em>Topic:</em> <strong>SystemC Communication Primitives and Transaction-Level Modeling (TLM)</strong></p>
+</blockquote>
 <hr />
-<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Move <strong>up</strong> the abstraction stack (ESL) to fight SoC complexity.</li>
-<li>Create an <strong>executable specification</strong> → analyze → <strong>partition HW/SW</strong> → implement → <strong>verify</strong> → iterate.</li>
-<li>Use <strong>TLM</strong>, <strong>SystemC</strong>, VIPs, and <strong>HLS/ISS/virtual platforms</strong> to accelerate design + verification.</li>
-</ul>
-<hr />
-<h2 id="motivation">Motivation<a class="headerlink" href="#motivation" title="Permanent link">&para;</a></h2>
-<div class="admonition danger">
-<p class="admonition-title">Why RTL-first breaks in modern SoCs</p>
-<ul>
-<li>More features, more HW+SW, more comms → <strong>time ↑</strong>, <strong>cost ↑</strong>, <strong>FoM compromises</strong>.</li>
-<li>Strict <strong>time-to-market</strong> makes long RTL cycles risky.</li>
-</ul>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Counter-move</p>
-<ul>
-<li><strong>Higher-level abstraction (ESL)</strong> to boost design efficiency and parallelize HW/SW development.</li>
-</ul>
-</div>
-<p><strong>Effects vs Fix</strong></p>
+<h2 id="1-channels-in-systemc">1) Channels in SystemC<a class="headerlink" href="#1-channels-in-systemc" title="Permanent link">&para;</a></h2>
+<p>Two types of channels:</p>
 <table>
 <thead>
 <tr>
-<th>Pain</th>
-<th>ESL Relief</th>
+<th>Feature</th>
+<th>Primitive Channels (<code>sc_prim_channel</code>)</th>
+<th>Hierarchical Channels (<code>sc_channel</code>/<code>sc_module</code>)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Long design time</td>
-<td>Early modeling + architectural exploration</td>
+<td>Ports &amp; hierarchy</td>
+<td>No</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Costly late changes</td>
-<td>Fast iteration at high abstraction</td>
+<td>Contains processes</td>
+<td>No</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>FoM compromises</td>
-<td>Early analysis of power/area/perf trade-offs</td>
+<td>Purpose</td>
+<td>Simple &amp; fast communication</td>
+<td>Complex bus-like modeling (PCI, AMBA, etc.)</td>
 </tr>
 <tr>
-<td>Verification bottlenecks</td>
-<td>Co-verification, VIPs, mixed-abstraction TBs</td>
+<td>Examples</td>
+<td><code>sc_fifo&lt;T&gt;</code>, <code>sc_mutex</code>, <code>sc_semaphore</code></td>
+<td>Hierarchical buses</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD
+    Channels --&gt; Primitive
+    Channels --&gt; Hierarchical
+    Primitive --&gt; sc_fifo
+    Primitive --&gt; sc_mutex
+    Primitive --&gt; sc_semaphore
+    Hierarchical --&gt; PCI
+    Hierarchical --&gt; AMBA</code></pre>
+<hr />
+<h2 id="2-mutual-exclusion-sc_mutex">2) Mutual Exclusion — <code>sc_mutex</code><a class="headerlink" href="#2-mutual-exclusion-sc_mutex" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Provides <strong>exclusive access</strong> to shared resources.</li>
+<li>Implements <code>sc_mutex_if</code> interface.</li>
+<li>Member functions:</li>
+<li><code>lock()</code>: blocking acquire.</li>
+<li><code>trylock()</code>: non-blocking, returns 0 if locked.</li>
+<li><code>unlock()</code>: release.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">SC_MODULE</span><span class="p">(</span><span class="n">ChangeRoom</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="n">sc_mutex</span><span class="w"> </span><span class="n">door</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">customer_1_change</span><span class="p">();</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">customer_2_change</span><span class="p">();</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">customer_3_change</span><span class="p">();</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="n">SC_CTOR</span><span class="p">(</span><span class="n">ChangeRoom</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">customer_1_change</span><span class="p">);</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">customer_2_change</span><span class="p">);</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">customer_3_change</span><span class="p">);</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">};</span>
+</code></pre></div>
+<hr />
+<h2 id="3-resource-pooling-sc_semaphore">3) Resource Pooling — <code>sc_semaphore</code><a class="headerlink" href="#3-resource-pooling-sc_semaphore" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Allows multiple processes to share <strong>a limited number of resources</strong>.</li>
+<li>Implements <code>sc_semaphore_if</code> interface.</li>
+<li>Member functions:</li>
+<li><code>wait()</code>: blocking acquire.</li>
+<li><code>trywait()</code>: non-blocking.</li>
+<li><code>post()</code>: release one resource.</li>
+<li><code>get_value()</code>: available slots.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">SC_MODULE</span><span class="p">(</span><span class="n">Parking</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="n">sc_semaphore</span><span class="w"> </span><span class="n">slots</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">car1</span><span class="p">();</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">car2</span><span class="p">();</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">car3</span><span class="p">();</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">car4</span><span class="p">();</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="n">SC_CTOR</span><span class="p">(</span><span class="n">Parking</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">slots</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 2 slots available</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">car1</span><span class="p">);</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">car2</span><span class="p">);</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">car3</span><span class="p">);</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">car4</span><span class="p">);</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">};</span>
+</code></pre></div>
+<hr />
+<h2 id="4-fifo-queues-sc_fifot">4) FIFO Queues — <code>sc_fifo&lt;T&gt;</code><a class="headerlink" href="#4-fifo-queues-sc_fifot" title="Permanent link">&para;</a></h2>
+<ul>
+<li>First-in-first-out (FIFO) communication.</li>
+<li>Implements <code>sc_fifo_in_if&lt;T&gt;</code> and <code>sc_fifo_out_if&lt;T&gt;</code>.</li>
+<li>Member functions:</li>
+<li>Writing: <code>write()</code>, <code>nb_write()</code>, <code>data_write_event()</code>.</li>
+<li>Reading: <code>read()</code>, <code>nb_read()</code>, <code>data_read_event()</code>.</li>
+<li>Query: <code>num_available()</code>, <code>num_free()</code>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">SC_MODULE</span><span class="p">(</span><span class="n">TicketCounter</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="n">sc_fifo</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">customers</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">add_new_customer</span><span class="p">();</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">process_customer</span><span class="p">();</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="n">SC_CTOR</span><span class="p">(</span><span class="n">TicketCounter</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">customers</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// queue size 3</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">add_new_customer</span><span class="p">);</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">process_customer</span><span class="p">);</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">};</span>
+</code></pre></div>
+<hr />
+<h2 id="5-clock-channel-sc_clock">5) Clock Channel — <code>sc_clock</code><a class="headerlink" href="#5-clock-channel-sc_clock" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Derived from <code>sc_signal</code>.</li>
+<li>Models periodic clock signals.</li>
+<li>Constructor: <code>sc_clock(name, period, time_unit, duty_cycle, start_time, pos_edge_first)</code>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">sc_clock</span><span class="w"> </span><span class="n">myclk</span><span class="p">(</span><span class="s">&quot;clk&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">SC_NS</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h2 id="6-transaction-level-models-tlm">6) Transaction-Level Models (TLM)<a class="headerlink" href="#6-transaction-level-models-tlm" title="Permanent link">&para;</a></h2>
+<h3 id="problem-with-hdl-models">Problem with HDL Models<a class="headerlink" href="#problem-with-hdl-models" title="Permanent link">&para;</a></h3>
+<ul>
+<li>RTL/HDL simulate <strong>every cycle</strong> and <strong>every signal change</strong>.</li>
+<li>Too detailed for high-level exploration.</li>
+<li>Slows down system-level verification.</li>
+</ul>
+<h3 id="tlm-approach">TLM Approach<a class="headerlink" href="#tlm-approach" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use <strong>function calls (transactions)</strong> instead of cycle-accurate signals.</li>
+<li><strong>100–10,000x faster</strong> than RTL simulation.</li>
+</ul>
+<pre class="mermaid"><code>flowchart LR
+  RTL1[RTL Model] --&gt;|Pin &amp; cycle accurate| RTL2[RTL Model]
+  FM1[Functional Model] --&gt;|Function call| FM2[Functional Model]</code></pre>
+<hr />
+<h2 id="7-tlm-applications">7) TLM Applications<a class="headerlink" href="#7-tlm-applications" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Firmware/software development</strong> before RTL is ready.</li>
+<li><strong>Architectural modeling</strong>.</li>
+<li><strong>Performance analysis</strong>.</li>
+<li><strong>Functional verification</strong>.</li>
+</ul>
+<pre class="mermaid"><code>graph TD
+  TLM --&gt;|fast| Software
+  TLM --&gt;|early| Architecture
+  TLM --&gt;|golden model| Verification</code></pre>
+<hr />
+<h2 id="8-timing-styles-in-tlm">8) Timing Styles in TLM<a class="headerlink" href="#8-timing-styles-in-tlm" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Loosely-timed (LT):</strong> whole transactions, fast, used in SW models.</li>
+<li><strong>Approximately-timed (AT):</strong> phase-based timing, more detailed.</li>
+<li><strong>Untimed (UT):</strong> no notion of time.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Style</th>
+<th>Detail Level</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UT</td>
+<td>None</td>
+<td>Functional verification</td>
+</tr>
+<tr>
+<td>LT</td>
+<td>Transaction</td>
+<td>SW perf analysis, architecture</td>
+</tr>
+<tr>
+<td>AT</td>
+<td>Phase-based</td>
+<td>HW perf analysis, verification</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="what-is-esl">What is ESL?<a class="headerlink" href="#what-is-esl" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>A <strong>higher-level executable abstraction</strong> of the system that is <strong>above RTL</strong>, aimed at comprehension, exploration, and early verification.</p>
-</blockquote>
-<div class="admonition tip">
-<p class="admonition-title">Expectations</p>
+<h2 id="9-tlm-20-overview">9) TLM-2.0 Overview<a class="headerlink" href="#9-tlm-20-overview" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Time-to-result ↓</strong>, <strong>FoM ↑</strong>, <strong>cost-effective</strong>, <strong>concurrent</strong> HW/SW development.</li>
-</ul>
-</div>
-<h3 id="abstraction-contrast">Abstraction contrast<a class="headerlink" href="#abstraction-contrast" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>flowchart LR
-  spec["Specification"]
-  rtl["RTL (HDL)"]
-  gds["Layout (GDS)"]
-  esl["ESL"]
-
-  spec -- Manual Effort --&gt; rtl;
-  rtl --&gt; gds;
-  spec -- ESL Modeling --&gt; esl;
-  esl --&gt; rtl;
-
-  classDef low fill:#eeeeee,stroke:#999,color:#333;
-  class rtl,gds low;
-
-````
-
----
-
-## ESL Flow (big picture)
-
-```mermaid
-flowchart LR
-    S[Specification]
-    M[ESL Model]
-    A[Analyze]
-    F{Acceptable?}
-    P[Partition]
-    SW[SW Model]
-    HW[HW Model]
-    D[Analyze &amp; Debug]
-    OK[Acceptable]
-    SI[SW Implementation]
-    HI[HW Implementation]
-    PV[Post-Partitioning Verification]
-    MOD[Modify]
-
-    S--&gt;M--&gt;A--&gt;F
-    F -- "No" --&gt; MOD --&gt; M
-    F -- "Yes" --&gt; P
-    P --&gt; SW --&gt; D
-    P --&gt; HW --&gt; D
-    D --&gt;|Refine| SW
-    D --&gt;|Refine| HW
-    D --&gt; OK
-    OK --&gt; SI &amp; HI --&gt; PV
-    PV --&gt;|Issues| MOD</code></pre>
-<hr />
-<h2 id="decisions-deliverables-at-esl">Decisions &amp; Deliverables at ESL<a class="headerlink" href="#decisions-deliverables-at-esl" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong>Architectural exploration/estimation/optimization</strong></p>
-<ul>
-<li>
-<p>Concurrency: sequential / parallel / pipelined / multithreaded</p>
-</li>
-<li>
-<p>Communication: bus / buffered / memory / point-to-point</p>
-</li>
-<li>
-<p>Functional adequacy: algorithm choice, arbitration, data representation (fixed vs float)</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>HW–SW partitioning</strong> with fewer experiments</p>
-</li>
-<li>
-<p><strong>Parallel SW development</strong> before HW exists</p>
-</li>
-<li>
-<p><strong>IP &amp; HW–SW integration</strong></p>
-</li>
-<li>
-<p><strong>RTL generation</strong></p>
-</li>
-<li>
-<p><strong>Faster verification</strong> (mixed abstraction, auto TB scaffolding)</p>
-</li>
+<li>Standardized by OSCI in 2005 (1.0) and 2008 (2.0).</li>
+<li>Mechanisms:</li>
+<li><strong>Sockets</strong>: communication endpoints.</li>
+<li><strong>Generic payload</strong>: standard data container.</li>
+<li><strong>Blocking / non-blocking transport</strong>.</li>
+<li><strong>Direct Memory Interface (DMI)</strong>.</li>
+<li><strong>Quantum keeper</strong> for timed simulations.</li>
 </ul>
 <hr />
-<h2 id="specifications-executable-specs">Specifications &amp; Executable Specs<a class="headerlink" href="#specifications-executable-specs" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">What counts as an executable spec?</p>
-</div>
+<h2 id="10-tlm-communication">10) TLM Communication<a class="headerlink" href="#10-tlm-communication" title="Permanent link">&para;</a></h2>
 <ul>
-<li>A runnable functional/behavioral model that exhibits intended behavior.  </li>
-<li>Tech: <strong>SystemC</strong>, <strong>TLM</strong>, <strong>SystemVerilog</strong>, MATLAB, XML, <strong>IP-XACT</strong>, SDL.</li>
-</ul>
-<h3 id="levels-of-executable-spec">Levels of executable spec<a class="headerlink" href="#levels-of-executable-spec" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>flowchart TB
-  AS["Architecture Spec\n(ISA, behaviors, features)"]
-  DS["Design Spec\n(uarch: pipeline, caches, counts)"]
-  TLM["Transaction-Level Modeling\n(bus transactions, timing options)"]
-
-  AS --&gt; DS --&gt; TLM
-</code></pre>
-<div class="admonition note">
-<p class="admonition-title">Good spec attributes</p>
-</div>
-<ul>
-<li>Complete &amp; precise functional requirements + constraints  </li>
-<li>Avoid premature platform details  </li>
-<li>Evolves with refinement; supports <strong>mixing abstraction levels</strong>  </li>
-<li>Source of truth for <strong>requirements → implementation → verification</strong></li>
-</ul>
-<hr />
-<h2 id="analysis-modifications-at-esl">Analysis &amp; Modifications at ESL<a class="headerlink" href="#analysis-modifications-at-esl" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong>Pre-partition</strong>: time/space/power/complexity/TTM trade-offs</p>
-</li>
-<li>
-<p><strong>Static</strong>: maintainability, usability, criticality, reliability</p>
-</li>
-<li>
-<p><strong>Dynamic</strong>: <strong>latency/throughput</strong>, arbitration/scheduling effects</p>
-</li>
-<li>
-<p><strong>Reqs for analysis</strong>: computation (fixed/float), comms (bandwidth)</p>
-</li>
-</ul>
-<hr />
-<h2 id="partitioning-hw-vs-sw">Partitioning (HW vs SW)<a class="headerlink" href="#partitioning-hw-vs-sw" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TD
-  E["Executable Spec"] --&gt; C{"Criteria"};
-
-  C --&gt;|Perf target| HW1["HW Candidate"];
-  C --&gt;|Flexibility| SW1["SW Candidate"];
-  C --&gt;|Area/Power| HW2["Accelerator"];
-  C --&gt;|Safety/Security| HW3["Isolated IP"];
-  C --&gt;|Reuse| SW2["FW / Driver"];
-
-  HW1 --&gt; HWAs["HW Subsystem"];
-  HW2 --&gt; HWAs;
-  HW3 --&gt; HWAs;
-
-  SW1 --&gt; SWAs["SW Subsystem"];
-  SW2 --&gt; SWAs;
-
-  HWAs --&gt; IF["Defined Interfaces (TLM/AMBA/etc)"];
-  SWAs --&gt; IF;
-</code></pre>
-<p>Decide also:</p>
-<ul>
-<li>
-<h1 id="and-type-of-processors-and-potential-isa-changes">and type of processors (and potential ISA changes)<a class="headerlink" href="#and-type-of-processors-and-potential-isa-changes" title="Permanent link">&para;</a></h1>
-</li>
-<li>
-<p>Memory org: ROM/SRAM/DRAM/…</p>
-</li>
-<li>
-<p>Interconnect/communication scheme</p>
-</li>
-<li>
-<p>Sub-partitioning across <strong>multiple CPUs</strong> and <strong>multiple HW teams</strong></p>
-</li>
-</ul>
-<hr />
-<h2 id="post-partitioning-analysis-debug-verification">Post-partitioning: Analysis, Debug, Verification<a class="headerlink" href="#post-partitioning-analysis-debug-verification" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong>Analysis</strong>: performance, interfaces, area, cost, debugability</p>
-</li>
-<li>
-<p><strong>Debug</strong>: run SW on <strong>ISS</strong>; model HW with <strong>SystemC/HDL</strong>; ensure interface compatibility</p>
-</li>
-<li>
-<p><strong>Verification planning</strong> @ higher abstraction:</p>
-<ul>
-<li>
-<p>Coverage at TLM</p>
-</li>
-<li>
-<p>Assertions/properties at the same level</p>
-</li>
-<li>
-<p>Mixed-abstraction environments (e.g., TLM + RTL)</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Iterate if intent not preserved.</p>
-</li>
+<li><strong>Socket</strong>: endpoint for communication.</li>
+<li><strong>Initiator</strong>: creates and sends transactions.</li>
+<li><strong>Target</strong>: receives and processes transactions.</li>
 </ul>
 <pre class="mermaid"><code>sequenceDiagram
-    participant Spec
-    participant ESL
-    participant Part as Partition
-    participant SW as SW Model/ISS
-    participant HW as HW Model/RTL
-    participant Ver as Post-Part Verify
-    Spec-&gt;&gt;ESL: Executable spec
-    ESL-&gt;&gt;Part: Analyze &amp; Partition
-    Part-&gt;&gt;SW: Build SW model
-    Part-&gt;&gt;HW: Build HW model
-    SW--&gt;&gt;Ver: Stimulus/Results
-    HW--&gt;&gt;Ver: Stimulus/Results
-    Ver--&gt;&gt;ESL: Issues? -&gt; Modify &amp; Iterate</code></pre>
+  participant Initiator
+  participant Target
+  Initiator-&gt;&gt;Target: b_transport(payload)
+  Target--&gt;&gt;Initiator: Response</code></pre>
 <hr />
-<h2 id="software-implementation-models">Software Implementation Models<a class="headerlink" href="#software-implementation-models" title="Permanent link">&para;</a></h2>
-<h3 id="waterfall-pre-esl">Waterfall (pre-ESL)<a class="headerlink" href="#waterfall-pre-esl" title="Permanent link">&para;</a></h3>
+<h2 id="11-initiators-and-targets">11) Initiators and Targets<a class="headerlink" href="#11-initiators-and-targets" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Linear, sequential; late feedback.</li>
+<li><strong>Initiator socket:</strong> drives transactions.</li>
+<li><strong>Target socket:</strong> responds to transactions.</li>
+<li>Interconnect can have many initiators and targets.</li>
 </ul>
-<h3 id="spiral-with-esl">Spiral (with ESL)<a class="headerlink" href="#spiral-with-esl" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Iterative, risk-driven; SW &amp; HW co-evolve.</li>
-</ul>
-<pre class="mermaid"><code>gantt
-    dateFormat  X
-    title Waterfall vs Spiral (conceptual)
-    section Waterfall
-    Requirements   :a1, 1, 2
-    Design         :a2, 3, 2
-    Implement      :a3, 5, 2
-    Integrate/Test :a4, 7, 2
-    section Spiral (overlapping)
-    Prototype/Model(ESL)   :b1, 1, 1
-    Risk Analysis          :b2, 2, 1
-    Build/Refine           :b3, 2, 2
-    Evaluate/Plan Next     :b4, 4, 1
-    Next Spiral            :b5, 5, 3</code></pre>
-<hr />
-<h2 id="applying-esl-to-software">Applying ESL to Software<a class="headerlink" href="#applying-esl-to-software" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>Generate SW from ESL or refined models (<strong>software synthesis</strong>) or hand-code guided by the model.</p>
-</li>
-<li>
-<p><strong>Observability</strong> into HW via models.</p>
-</li>
-<li>
-<p><strong>Scope</strong></p>
-<ul>
-<li>
-<p><strong>ISS</strong>: CPU regs/mem visible</p>
-</li>
-<li>
-<p><strong>Virtual Platform</strong>: full SoC (user I/F, storage, accelerators)</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Exec platforms</strong>: workstation, FPGA-based emulation</p>
-</li>
-<li>
-<p><strong>Metrics</strong>: speed, memory footprint</p>
-</li>
-</ul>
-<pre class="mermaid"><code>flowchart LR
-  SSW["Software"];
-  ISS["Hardware Model (ISS)"];
-  VP(("Virtual Platform"));
-
-  SSW &lt;--&gt; ISS;
-  SSW --&gt; VP;
-  ISS --&gt; VP;
-</code></pre>
-<hr />
-<h2 id="debuggability">Debuggability<a class="headerlink" href="#debuggability" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Approach</th>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>HW trace buffers</td>
-<td>Real silicon visibility</td>
-<td>Area/perf cost, security concerns</td>
-</tr>
-<tr>
-<td>ESL-based</td>
-<td>PC/data trace from models, no HW cost</td>
-<td>Model fidelity limits, discipline</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="hardware-implementation-paths">Hardware Implementation Paths<a class="headerlink" href="#hardware-implementation-paths" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>RTL to gates</strong> via synthesis.</li>
-</ul>
-<p><strong>Options</strong></p>
-<ol>
-<li>
-<p><strong>Extensible processors</strong> (custom instructions, SIMD/MAC) + vendor toolchains</p>
-</li>
-<li>
-<p><strong>Co-processors</strong> (DSP/VLIW attached on bus)</p>
-</li>
-<li>
-<p><strong>ASIC</strong> (HLS from C/C++/SystemC → RTL)</p>
-</li>
-<li>
-<p><strong>FPGA</strong> (rapid prototyping; same HLS path)</p>
-</li>
-</ol>
 <pre class="mermaid"><code>graph LR
-    H[ESL/C/C++/SystemC] --&gt; HLS[High-Level Synthesis]
-    HLS --&gt; RTL[RTL]
-    RTL --&gt; ASIC[ASIC Flow]
-    RTL --&gt; FPGA[FPGA Flow]</code></pre>
+  I[Initiator] --payload--&gt; T[Target]
+  T --response--&gt; I</code></pre>
 <hr />
-<h2 id="implementation-verification">Implementation Verification<a class="headerlink" href="#implementation-verification" title="Permanent link">&para;</a></h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>Verify implementation preserves <strong>design intent</strong> (compare to post-partition model).</p>
-</li>
-<li>
-<p><strong>Speed tricks</strong>: subsystem-level focus, mixed abstraction, FPGA prototypes.</p>
-</li>
-<li>
-<p><strong>Pass/Fail notions</strong></p>
-<ul>
-<li>
-<p>Positive: requirement satisfied (valid inputs)</p>
-</li>
-<li>
-<p>Negative: robustness (invalid inputs)</p>
-</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h2 id="verification-ips-vips">Verification IPs (VIPs)<a class="headerlink" href="#verification-ips-vips" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Reusable verification components.</li>
-</ul>
-<pre class="mermaid"><code>flowchart LR
-    VIP[Verification IP]
-    VIP --&gt;|Dynamic| Dyn[Stimulus, Scoreboard, Coverage]
-    VIP --&gt;|Static| Sta[Assertions/Properties]</code></pre>
-<hr />
-<h2 id="systemc-primer">SystemC Primer<a class="headerlink" href="#systemc-primer" title="Permanent link">&para;</a></h2>
-<h3 id="history-state">History &amp; State<a class="headerlink" href="#history-state" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>timeline
-    title SystemC Key Milestones
-    1996 : Development starts
-    2002 : OSCI releases v2.0 proposal
-    2006 : IEEE Std 1666-2005
-    2023 : Ref Impl v3.0.0 (GitHub)</code></pre>
-<h3 id="why-systemc">Why SystemC?<a class="headerlink" href="#why-systemc" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>Bridges SW/HW; models <strong>parallelism</strong> in familiar <strong>C++</strong>.</p>
-</li>
-<li>
-<p>Any valid C++ program is valid SystemC (it’s an extension).</p>
-</li>
-<li>
-<p>Heavy use of <strong>templates/macros/libs</strong>.</p>
-</li>
-</ul>
-<hr />
-<h2 id="simulation-pipeline">Simulation Pipeline<a class="headerlink" href="#simulation-pipeline" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TD
-  Dev["C++ Dev Env"];
-  Comp["Compile"];
-  LinkStep["Link"];
-  Exe["Executable"];
-  RunStep["Run on Host (Win/Unix)"];
-  Result["Simulation Results"];
-
-  Dev --&gt; Comp;
-  Comp --&gt; LinkStep;
-  LinkStep --&gt; Exe;
-  Exe --&gt; RunStep;
-  RunStep --&gt; Result;
-</code></pre>
-<hr />
-<h2 id="systemc-hello-world">SystemC “Hello, World!”<a class="headerlink" href="#systemc-hello-world" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;systemc.h&gt;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">SC_MODULE</span><span class="p">(</span><span class="n">Hello_SystemC</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">SC_CTOR</span><span class="p">(</span><span class="n">Hello_SystemC</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="n">SC_THREAD</span><span class="p">(</span><span class="n">module_thread</span><span class="p">);</span><span class="w"> </span><span class="c1">// register thread process</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">module_thread</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="n">SC_REPORT_INFO</span><span class="p">(</span><span class="s">&quot;Module Thread Saying&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hello SystemC World!&quot;</span><span class="p">);</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">};</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="kt">int</span><span class="w"> </span><span class="nf">sc_main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="n">Hello_SystemC</span><span class="w"> </span><span class="n">HelloWorld_i</span><span class="p">(</span><span class="s">&quot;HelloWorld_i&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// create instance</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="n">sc_start</span><span class="p">();</span><span class="w">                                  </span><span class="c1">// start simulator (run to time 0 unless events)</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
-</code></pre></div>
-<h3 id="compile-example">Compile (example)<a class="headerlink" href="#compile-example" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># from the directory with main.cpp</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>g++<span class="w"> </span>-I&lt;path_to_systemc_include&gt;<span class="w"> </span>-L&lt;path_to_systemc_lib&gt;<span class="w"> </span>main.cpp<span class="w"> </span>-lsystemc<span class="w"> </span>-o<span class="w"> </span>hello_sc
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>./hello_sc
-</code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Checklist before compiling</p>
-</div>
-<ul>
-<li><code>g++</code> installed  </li>
-<li><code>-I</code> points to <code>systemc/include</code>  </li>
-<li><code>-L</code> points to the lib directory (e.g., <code>lib-linux64</code>)  </li>
-<li>Link with <code>-lsystemc</code>  </li>
-<li>If runtime can’t find the shared lib, set <code>LD_LIBRARY_PATH</code> (Linux) or use <code>rpath</code>.</li>
-</ul>
-<hr />
-<h2 id="quick-study-guide">Quick Study Guide<a class="headerlink" href="#quick-study-guide" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong>Explain ESL vs RTL</strong> and why abstraction helps.</p>
-</li>
-<li>
-<p><strong>Draw the ESL flow</strong> (spec → model → analyze → partition → implement → verify).</p>
-</li>
-<li>
-<p><strong>List 3 partitioning criteria</strong> and 3 analysis types.</p>
-</li>
-<li>
-<p><strong>Contrast Waterfall vs Spiral</strong> for SW in SoC context.</p>
-</li>
-<li>
-<p><strong>Name two execution platforms</strong> for ESL-driven SW dev.</p>
-</li>
-<li>
-<p><strong>Sketch SystemC toolchain</strong> from code to sim results.</p>
-</li>
+<li>Black, David C., and Jack Donovan. <em>SystemC: From the ground up</em>. Springer, 2004.</li>
 </ul>
 
 
@@ -1431,7 +1198,7 @@ flowchart LR
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../lecture1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lec 1">
+          <a href="../lecture5/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lec 5">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1441,27 +1208,11 @@ flowchart LR
                 Previous
               </span>
               <div class="md-ellipsis">
-                Lec 1
+                Lec 5
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../../week2/lecture3/" class="md-footer__link md-footer__link--next" aria-label="Next: Lec 3">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Lec 3
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
